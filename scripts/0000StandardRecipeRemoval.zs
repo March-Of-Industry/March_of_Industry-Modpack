@@ -223,7 +223,6 @@ recipes.remove(<ImmersiveEngineering:material:1>);
 recipes.remove(<ImmersiveEngineering:material:4>);
 recipes.remove(<ImmersiveEngineering:metalDevice:11>);
 recipes.remove(<ImmersiveEngineering:metalDevice:9>);
-recipes.removeShapeless(<*>,[]);
 
 
 //Ingot to Block Conversion
