@@ -1,0 +1,35 @@
+{
+	"Diamond-Spikes": {
+		"template": {"type": "surface", "followTerrain": true1, "generator": "spike"},
+		"block": [
+			{"name": "appliedenergistics2:tile.BlockSkyStone", "metadata": 0, "weight": 70},
+			{"name": "minecraft:redstone_block", "metadata": 0, "weight": 10},
+			{"name": "appliedenergistics2:tile.BlockQuartz", "metadata": 0, "weight": 10},
+			{"name": "appliedenergistics2:tile.BlockFluix", "metadata": 0, "weight": 10}
+		],
+    "material":[
+      "minecraft:air",
+      "advancedRocketry:moonTurf"
+    ],
+		"numClusters": 5,
+		"chunkChance": 20,
+		"minHeight": 20,
+		"heightVariance": 20,
+		"positionVariance": 3,
+		"largeSpikes": true,
+    "large-spike-chance": 30,
+    "large-spike-filler-size":20,
+    
+		"retrogen": "true",
+        "biomeRestriction": "none",
+        "biomes": [
+            "all"
+        ],
+        "dimensionRestriction": "blacklist",
+        "dimensions": [
+            -1,
+            0,
+            1
+        ]
+	}
+}

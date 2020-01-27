@@ -1,0 +1,10 @@
+{
+  "clientId": "618588457408659459",
+  "smallDataUid": "gem",
+  "hideUnknownIPs": true,
+  "displayUrls": {
+    "gui": "https://raw.githubusercontent.com/Superfrogman98/MOI/master/data/gui/",
+    "server": "https://raw.githubusercontent.com/Superfrogman98/MOI/master/data/server/",
+    "small": "https://raw.githubusercontent.com/Superfrogman98/MOI/master/data/small/"
+  }
+}

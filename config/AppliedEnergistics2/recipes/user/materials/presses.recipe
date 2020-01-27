@@ -1,0 +1,15 @@
+inscribe=
+    tnc:item.Stainless_Steel_Sheet ae2:ItemMaterial.LogicProcessorPress
+    -> ae2:ItemMaterial.LogicProcessorPress
+
+inscribe=
+    tnc:item.Stainless_Steel_Sheet ae2:ItemMaterial.CalcProcessorPress
+    -> ae2:ItemMaterial.CalcProcessorPress
+
+inscribe=
+    tnc:item.Stainless_Steel_Sheet ae2:ItemMaterial.EngProcessorPress
+    -> ae2:ItemMaterial.EngProcessorPress
+
+inscribe=
+    tnc:item.Stainless_Steel_Sheet ae2:ItemMaterial.SiliconPress
+    -> ae2:ItemMaterial.SiliconPress

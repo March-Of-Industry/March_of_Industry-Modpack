@@ -1,0 +1,15 @@
+import mods.nei.NEI;
+//NEI.overrideName(<libVulpes:libVulpescoil0:4>, "Low Voltage Coil");
+//NEI.overrideName(<libVulpes:libVulpescoil0:2>, "Medium Voltage Coil");
+//NEI.overrideName(<libVulpes:libVulpescoil0:9>, "High Voltage Coil");
+//NEI.overrideName(<libVulpes:libVulpescoil0:7>, "Extreme Voltage Coil");
+//NEI.overrideName(<libVulpes:libVulpescoil0:10>, "Insane Voltage Coil");
+//NEI.overrideName(<advancedRocketry:tile.electrolyser>, "Chemical Reformer");
+<advancedRocketry:tile.electrolyser>.displayName = "Chemical Reformer";
+<chisel:diamondChisel>.displayName = "Blue Steel Chisel";
+<chisel:obsidianChisel>.displayName = "Steel Chisel";
+<ForgeMicroblock:sawStone>.displayName = "Bronze Saw";
+<ForgeMicroblock:sawIron>.displayName = "Iron Saw";
+<ForgeMicroblock:sawDiamond>.displayName = "Blue Steel Saw";
+<tfcm:item.Gear>.displayName = "Small Iron Gear";
+<Railcraft:machine.alpha:8>.displayName = "Metal Former";

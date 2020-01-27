@@ -1,0 +1,47 @@
+{
+  "main": {
+    "0": {
+      "title": "Reload rocketry recipes",
+      "icon": {
+        "name": "advancedRocketry:rocketBuilder",
+        "damage": 0
+      },
+      "action": {
+        "command": "/advancedRocketry reloadRecipes"
+      }
+    },
+    "1": {
+      "title": "recipe maker",
+      "icon": {
+        "name": "Avaritia:Double_Craft",
+        "damage": 0
+      },
+      "action": {
+        "command": "/mtrm"
+      }
+    },
+    "2": {
+      "title": "reload",
+      "icon": {
+        "name": "RotaryCraft:rotarycraft_item_shaftcraft",
+        "damage": 14
+      },
+      "action": {
+        "command": "/mt reload"
+      }
+    },
+    "9": {
+      "title": "cart",
+      "icon": {
+        "name": "astikoor:cargocart",
+        "damage": 0
+      },
+      "action": {
+        "key": {
+          "key": "key.astikoor.desc",
+          "toggle": false
+        }
+      }
+    }
+  }
+}

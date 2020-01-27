@@ -1,0 +1,214 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "custommenu:images/title.png",
+            "posX" : 12,
+            "posY" : 10,
+            "width" : 256,
+            "height" : 64,
+            "alignment" : "top_left"
+        },
+         "mount":
+        {
+            "image" : "custommenu:images/mount.png",
+            "posX" : 0,
+            "posY" : 10,
+            "width" : 12,
+            "height" : 64,
+            "alignment" : "top_left"
+        }
+    },
+    
+    "buttons":
+    {
+        "singleplayer":
+        {
+            "text" : "menu.singleplayer",
+            "posX" : 65,
+            "posY" : 79,
+            "width" : 150,
+            "height" : 20,
+            "texture" : "custommenu:buttons/longButtons.png",
+            "imageWidth" : 200,
+            "imageHeight" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            },
+            "alignment" : "top_left"
+        },
+        
+        "multiplayer":
+        {
+            "text" : "menu.multiplayer",
+            "posX" : 65,
+            "posY" : 104,
+            "width" : 150,
+            "height" : 20,
+            "texture" : "custommenu:buttons/longButtons.png",
+            "imageWidth" : 200,
+            "imageHeight" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            },
+            "alignment" : "top_left"
+        },
+        
+        "mods":
+        {
+            "text" : "Mods",
+            "posX" : 65,
+            "posY" : 129,
+            "width" : 150,
+            "height" : 20,
+            "texture" : "custommenu:buttons/longButtons.png",
+            "imageWidth" : 200,
+            "imageHeight" : 20,
+            "hoverText":"\u00A72 Mods loaded: #modsloaded# \u00A7e Mods active: #modsactive#",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            },
+            "alignment" : "top_left"
+        },
+            
+        "options":
+        {
+            "text" : "menu.options",
+            "posX" : 65,
+            "posY" : 154,
+            "width" : 150,
+            "height" : 20,
+            "texture" : "custommenu:buttons/longButtons.png",
+            "imageWidth" : 200,
+            "imageHeight" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            },
+            "alignment" : "top_left"
+        },
+        
+        "quit":
+        {
+            "text" : "menu.quit",
+            "posX" : 65,
+            "posY" : 179,
+            "width" : 150,
+            "height" : 20,
+            "texture" : "custommenu:buttons/longButtons.png",
+            "imageWidth" : 200,
+            "imageHeight" : 20,
+            "action" : 
+            {
+                "type" : "quit"
+            },
+            "alignment" : "top_left"
+        },
+        
+        "Issue Tracker":
+        {
+            "text" : "",
+            "posX" : 85,
+            "posY" : 204,
+            "width" : 20,
+            "height" : 20,
+            "imageWidth" : 100,
+            "imageHeight" : 100,
+            "texture" : "custommenu:buttons/issues.png",
+            "action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/Superfrogman98/Goliath-Industries/issues"
+            },
+            "hoverText":"Issue Tracker",
+            "alignment" : "top_left"
+        },
+        
+        
+        "language":
+        {
+            "text" : "",
+            "posX" : 130,
+            "posY" : 204,
+            "width" : 20,
+            "height" : 20,
+            "imageWidth" : 100,
+            "imageHeight" : 100,
+            "texture" : "custommenu:buttons/lang.png",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            },
+            "alignment" : "top_left"
+        },
+        
+        "refresh":
+        {
+            "text" : "",
+            "posX" : 175,
+            "posY" : 204,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommenu:buttons/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            },
+            "alignment" : "top_left"
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB. Do not distribute!",
+            "posX" : -100,
+            "posY" : -5,
+            "color" : -1,
+            "alignment" : "bottom_right",
+            "fontSize" : ".5"
+        },
+        
+        "mod_data":
+        {
+            "text" :"Forge Version: #forgeversion# ",
+            "posX" : 2,
+            "posY" :-5,
+            "color" : -1,
+            "alignment" : "bottom_left",
+            "fontSize" : ".5"
+        }
+    },
+    
+    "other":
+    { 
+      "background":
+      {
+          "image" : "",
+          "slideshow": 
+          {
+              "images" :
+              [
+                  "custommenu:images/background/slide1.png",
+                  "custommenu:images/background/slide2.png",
+                  "custommenu:images/background/slide3.png",
+                  "custommenu:images/background/slide4.png",
+                  "custommenu:images/background/slide5.png"
+              ],
+              "displayDuration" : 80,
+              "fadeDuration" : 40,
+              "shuffle" : false
+          }
+      }
+    }
+}

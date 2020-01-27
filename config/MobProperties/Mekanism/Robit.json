@@ -1,0 +1,6 @@
+{
+  "_name": "Mekanism.Robit",
+  "drops": [],
+  "pre_stats": [],
+  "stats": [{ "function": "modifier", "attribute": "generic.maxHealth", "override": true, "value": 1000~2000 }]
+}

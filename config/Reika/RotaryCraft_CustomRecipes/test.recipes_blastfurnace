@@ -1,0 +1,121 @@
+{
+  type = "test1"
+  primary_input = {
+    items = {
+      "tnc:item.Handle_HSLA"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  secondary_input = {
+    items = {
+      "terrafirmacraft:item.Sword Mold:1"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  main_item = {
+    "RotaryCraft:rotarycraft_item_compacts:3"
+  }
+  required_main_item = 2
+  match_number_exactly = true
+  has_bonus = false
+  xp = 0.3
+  temperature = 1000
+  alloying = false
+  output = "tnc:item.Sword_Bedrock"
+  output_nbt = {
+    
+  }
+}
+{
+  type = "test1"
+  primary_input = {
+    items = {
+      "tnc:item.Handle_HSLA"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  secondary_input = {
+    items = {
+      "terrafirmacraft:item.Mace Mold:1"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  main_item = {
+    "RotaryCraft:rotarycraft_item_compacts:3"
+  }
+  required_main_item = 2
+  match_number_exactly = true
+  has_bonus = false
+  xp = 0.3
+  temperature = 1000
+  alloying = false
+  output = "tnc:item.Mace_Bedrock"
+  output_nbt = {
+    
+  }
+}
+{
+  type = "test1"
+  primary_input = {
+    items = {
+      "tnc:item.Handle_HSLA"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  secondary_input = {
+    items = {
+      "terrafirmacraft:item.Hammer Mold:1"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  main_item = {
+    "RotaryCraft:rotarycraft_item_compacts:3"
+  }
+  required_main_item = 1
+  match_number_exactly = true
+  has_bonus = false
+  xp = 0.3
+  temperature = 1000
+  alloying = false
+  output = "tnc:item.Hammer_Bedrock"
+  output_nbt = {
+    
+  }
+}
+{
+  type = "test1"
+  primary_input = {
+    items = {
+      "tnc:item.Handle_HSLA"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  secondary_input = {
+    items = {
+      "terrafirmacraft:item.Knife Mold:1"
+    }
+    consumption_chance = 100
+    number_to_use = 1
+  }
+  main_item = {
+    "RotaryCraft:rotarycraft_item_compacts:3"
+  }
+  required_main_item = 1
+  match_number_exactly = true
+  has_bonus = false
+  xp = 0.3
+  temperature = 1000
+  alloying = false
+  output = "tnc:item.Knife_Bedrock"
+  output_nbt = {
+    
+  }
+}
+

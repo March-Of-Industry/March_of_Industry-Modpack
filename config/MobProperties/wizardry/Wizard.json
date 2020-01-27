@@ -1,0 +1,16 @@
+{
+  "_name": "wizardry.Wizard",
+  "drops": [],
+  "pre_stats": [],
+  "stats": [
+  {
+	"function": "all",
+	"count": 1,
+	"functions": 
+		[
+		{ "function": "modifier", "attribute": "generic.maxHealth", "override": true, "value": 3000~5000 },
+		{ "function": "modifier", "attribute": "generic.attackDamage", "override": true, "value": 600~900 }
+		]
+	}
+  ]
+}

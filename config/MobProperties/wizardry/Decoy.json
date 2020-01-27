@@ -1,0 +1,7 @@
+{
+  "_name": "wizardry.Decoy",
+  "drops": [],
+  "pre_stats": [],
+  "stats": [{ "function": "modifier", "attribute": "generic.maxHealth", "override": true, "value": 1000~2000 },
+		{ "function": "modifier", "attribute": "generic.attackDamage", "override": true, "value": 300~400 }]
+}

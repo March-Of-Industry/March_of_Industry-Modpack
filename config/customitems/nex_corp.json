@@ -1,0 +1,153 @@
+{
+   "creativeTabs": 
+    [
+	    {
+	        "tabLabel": "Nex Corp Solutions",
+	        "iconItem": "customitems:carbon_plate"
+	    }
+    ],
+    "items": 
+    [
+        {
+          "name": "Carbon Plate",
+          "textureName": "carbon_plate",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Cement",
+          "textureName": "cement",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Carbon mesh",
+          "textureName": "carbon_mesh",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Tungsten Plate",
+          "textureName": "tungsten_plate",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Dark Steel Plate",
+          "textureName": "dark_steel_plate",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Electrical Steel Plate",
+          "textureName": "electrical_steel_plate",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Metal Press Mold (Unshaped)",
+          "textureName": "mold_unshaped",
+          "maxStackSize": 16,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Aluminum Gear",
+          "textureName": "aluminum_gear",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Casing Mold",
+          "textureName": "mold_shell",
+          "maxStackSize": 1,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Empty Spool",
+          "textureName": "empty_spool",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Bucket Mold",
+          "textureName": "mold_bucket",
+          "maxStackSize": 1,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Chisel Mold",
+          "textureName": "mold_chisel",
+          "maxStackSize": 1,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Titanium Wire",
+          "textureName": "titanium_wire",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+          "name": "Iridium Wire",
+          "textureName": "iridium_wire",
+          "maxStackSize": 64,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Nails",
+            "textureName": "nails",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Unfired Brick",
+            "textureName": "unfired_brick",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Wood Substrate",
+            "textureName": "wood_substrate",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        }
+    ],
+    "blocks" : 
+    [
+      { 
+        "name": "Carbon Plated Block",
+        "textureName": "carbon_block",
+        "material": "rock",
+        "hardness": 1,
+        "creativeTab": "Nex Corp Solutions"
+      },
+      { 
+        "name": "Carbon Plated Block Alt",
+        "textureName": "carbon_block_alt",
+        "material": "rock",
+        "hardness": 1,
+        "creativeTab": "Nex Corp Solutions"
+      }
+    ],
+    "axes": [
+        
+    ],
+    "fluids":[
+        {
+            "name":"Witchwater",
+            "textureName": "witchwater",
+            "temperature": 300,
+            
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        }
+    ],
+    "changeItems": [
+        {
+            "maxStackSize": 6,
+            "name": "minecraft:boat"
+        }
+    ]
+}
