@@ -5,6 +5,9 @@ mods.Terrafirmacraft.Knapping.addClayWorkingRecipe(<customitems:unfired_brick>* 
  "  #  ", 
  "#####", 
  "  #  ");
+ 
+ 
+ 
 mods.Terrafirmacraft.ItemHeat.addRecipe(<minecraft:brick>,<customitems:unfired_brick>, 1000);
 mods.thermalexpansion.Furnace.addRecipe(2000, <customitems:unfired_brick>, <minecraft:brick>);
 furnace.addRecipe(<minecraft:brick>, <customitems:unfired_brick>, 0.1);

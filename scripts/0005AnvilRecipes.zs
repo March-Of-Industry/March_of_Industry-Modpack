@@ -48,6 +48,9 @@ game.setLocalization("gui.plans.cauldron", "Cauldron");
 mods.Terrafirmacraft.Anvil.addPlanRecipe("csaw", 25, 14, 14);
 game.setLocalization("gui.plans.csaw", "Circular Saw Blade");
 
+mods.Terrafirmacraft.Anvil.addPlanRecipe("handle", 14, 14, 14);
+game.setLocalization("gui.plans.handle", "Handle");
+
 //Crude Circuit
 mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<tfcm:item.Circuit>,<terrafirmacraft:item.Gold Sheet>,<minecraft:redstone>,"circuit",1);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<tfcm:item.Circuit>,<terrafirmacraft:item.Copper Sheet>,<customitems:wood_substrate>,"circuit",1);
@@ -60,6 +63,16 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:upgradeLock>,<terrafir
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:shroudKey>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "conKey", 1);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:personalKey>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "perKey", 1);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:personalKey:1>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "cofhKey", 1);
+
+//HSLA Handle
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<tnc:item.Handle_HSLA>, <RotaryCraft:rotarycraft_item_shaftcraft:1>, "handle", 6);
+
+//Chisel Recipes
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<chisel:chisel>, <terrafirmacraft:item.Wrought Iron Ingot>,<terrafirmacraft:item.stick>, "chisel", 3);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<chisel:obsidianChisel>, <terrafirmacraft:item.Steel Ingot>,<terrafirmacraft:item.stick>, "chisel", 4);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<chisel:diamondChisel>, <terrafirmacraft:item.Blue Steel Ingot>,<terrafirmacraft:item.stick>, "chisel", 6);
+
+
 
 //tin bushing
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<Railcraft:part.gear:3>, <terrafirmacraft:item.Tin Ingot>, "bushing", 1);

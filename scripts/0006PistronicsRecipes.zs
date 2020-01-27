@@ -1,39 +1,41 @@
-//create glue from TFC tech
+//Glue
 recipes.addShapeless(<Pistronics2:Glue>, [<ore:materialGlue>]);
+//Camo Paste
 recipes.addShapeless(<Pistronics2:Camou Paste>*2, [<minecraft:nether_wart>, <ore:dyeRed>, <ore:dyeGreen>, <ore:dyeBlue>]);
+//Super Glue
 recipes.addShapeless(<Pistronics2:Super Glue>, [<Pistronics2:Glue>, <ore:dyeRed>]);
-
-
 // The Tool
 recipes.addShaped(<Pistronics2:The Tool>,
  [[<ore:stickWood>, null, <ore:stickWood>],
   [null, <ore:gearIron>, null],
   [null, <Pistronics2:Rod Block>, null]]);
-  
-// Spade
+//Spade
 recipes.addShaped(<Pistronics2:Spade>,
  [[<ore:ingotIron>, null, null],
   [<ore:ingotIron>, null, null],
   [<Pistronics2:Rod Block>, null, null]]);
-
-//saw
+//Saw
 recipes.addShaped(<Pistronics2:Saw>, 
   [[<ore:stickWood>, <ore:stickWood>, <Pistronics2:Rod Block>], 
    [<ore:ingotIron>, <ore:ingotIron>, <Pistronics2:Rod Block>]]);
-
-
-// Rod
+//Rod
 recipes.addShaped(<Pistronics2:Rod Block> * 6, 
   [[<ore:stripeIron>, <terrafirmacraft:item.SinglePlank>, <ore:stripeIron>], 
    [null, <ore:woodLumber>, null],
    [<ore:stripeIron>, <ore:woodLumber>, <tfctech:item.Wrought Iron Stripe>]]);
 
+//Rod Part Reset
 recipes.addShapeless(<Pistronics2:Rod Part Block>, [<Pistronics2:Rod Part Block>]);
+
+//Rod Parts -> Rod
 recipes.addShapeless(<Pistronics2:Rod Block>, [<Pistronics2:Rod Part Block>,<Pistronics2:Rod Part Block>]);
 
+//Redstone Plate
 recipes.addShaped(<Pistronics2:Extension Block>.withTag({comp: 0, redio: 0 as byte, camouID: -1, camou: 0 as byte, camouMeta: 0, super_sticky: 0 as byte, sticky: 0 as byte, redstone: 1 as byte}), 
   [[<ore:woodLumber>, <ore:woodLumber>, <ore:woodLumber>],
    [null, <Pistronics2:Rod Block>.withTag({redstone: 1 as byte}), null]]);
+
+//Stopper
 recipes.addShaped(<Pistronics2:Stopper> * 4, 
   [[<ore:woodLumber>, <ore:obsidian>, <ore:woodLumber>], 
    [<minecraft:obsidian>, <ore:stone>, <ore:obsidian>], 
@@ -63,10 +65,6 @@ recipes.addShaped(<Pistronics2:Rod Folder>,
  [[<ore:woodLumber>, <minecraft:trapdoor>, <ore:woodLumber>],
   [<ore:gearBronze>, null, <ore:gearBronze>],
   [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
-  
-
-
-
   
 // Extension
 recipes.addShaped(<Pistronics2:Extension Block>.withTag({comp: 0, redio: 0 as byte, camouID: -1, camou: 0 as byte, camouMeta: 0, super_sticky: 0 as byte, sticky: 0 as byte, redstone: 0 as byte}),

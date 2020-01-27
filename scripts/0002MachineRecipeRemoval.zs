@@ -28,6 +28,10 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<ReactorCraft:reactorcraft_ite
 mods.immersiveengineering.ArcFurnace.removeRecipe(<ReactorCraft:reactorcraft_item_ingots:2>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<ReactorCraft:reactorcraft_item_ingots:1>);
 
+//Carpenter Forestry
+mods.forestry.Carpenter.removeRecipe(<ExtraBees:misc>);
+mods.forestry.Carpenter.removeRecipe(<Forestry:hardenedMachine>);
+
 //Crusher Immersive Engineering (Takes Output)
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:gravel>);
 mods.immersiveengineering.Crusher.removeRecipe(<minecraft:sand>);
@@ -118,6 +122,9 @@ mods.thermalexpansion.Smelter.removeRecipe(<ore:crystalCinnabar>,<*>);
 mods.thermalexpansion.Smelter.removeRecipe(<minecraft:sand>,<*>);
 mods.thermalexpansion.Smelter.removeRecipe(<ThermalExpansion:material:515>,<*>);
 
+//Metallurgic Infuser
+mods.mekanism.Infuser.removeRecipe(<Mekanism:EnrichedAlloy>);
+
 //Metal Press Sheets
 mods.immersiveengineering.MetalPress.removeRecipeByMold(<ImmersiveEngineering:mold:0>);
 
@@ -159,10 +166,33 @@ mods.thermalexpansion.Pulverizer.removeRecipe(<ore:oreRedstone>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<ore:oreDiamond>);
 mods.thermalexpansion.Pulverizer.removeRecipe(<ore:oreIridium>);
 
+//Rock Crusher
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stonebrick>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_brick_stairs>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:5>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:1>);
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:stair:39>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:mossy_cobblestone>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:3>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_stairs>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:brick_block>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:brick_stairs>);
+mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:4>);
+mods.railcraft.RockCrusher.removeRecipe(<Railcraft:stair:8>); 
+
+//Rolling machine
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail>);
+mods.railcraft.Rolling.removeRecipe(<tc:copperRail>);
+mods.railcraft.Rolling.removeRecipe(<tc:steelRail>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rebar>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:1>);
+mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:3>);
+
+
 //Sawmill 
 mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:bed>);
 mods.thermalexpansion.Sawmill.removeRecipe(<minecraft:painting>);
 mods.mekanism.Sawmill.removeRecipe(<minecraft:bed>, <minecraft:planks>, <minecraft:wool>);
-
 
 

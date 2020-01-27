@@ -112,30 +112,27 @@ for i, item in cobblestones
   mods.immersiveengineering.Crusher.addRecipe(sands[i], gravels[i], 2000);
 }
 
+//Add Sands to ThermionicFabricator
 for i, item in sands
 {
   mods.forestry.ThermionicFabricator.addSmelting(1000, sands[i], 1000); 
 }
 
-//Crusher Flux recipes
+//Basalt to obsidian Gravel and dust
+mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:StoneIgExSmooth:1>, false, false, [<Railcraft:cube:4>,<terrafirmacraft:item.LooseRock:12>*4, <terrafirmacraft:item.LooseRock:12> * 2, <Railcraft:dust>], [0.45, 1, 0.5, 0.25]);
+
+
+//IE Crusher Flux recipes
 //OutputStack1, InputStack, Energy, OutputStack2, OutputStack2Chance //Chance in Decimals
 mods.immersiveengineering.Crusher.addRecipe(flux * 2, marbleRock, 2000, flux, 0.5);
 mods.immersiveengineering.Crusher.addRecipe(flux * 2, chalkRock, 2000, flux, 0.5);
 mods.immersiveengineering.Crusher.addRecipe(flux * 2, dolomiteRock, 2000, flux, 0.5);
 mods.immersiveengineering.Crusher.addRecipe(flux * 2, limestoneRock, 2000, flux, 0.5);
 
-//salt recipe
+//Salt recipe
 mods.immersiveengineering.Crusher.addRecipe(salt * 2, rockSaltRock, 2000, salt, 0.5);
 
-//Hammer Breakdown recipes
-recipes.removeShapeless(<terrafirmacraft:item.Ore:*>,[<ore:itemHammer>,<terrafirmacraft:item.Ore:*>]);
-recipes.removeShapeless(<terrafirmacraft:item.Small Ore:*>,[<ore:itemHammer>,<terrafirmacraft:item.Ore:*>]);
-
-
-
-
-
-
+//Crushing Table Breakup ores
 val richOres = [
 <terrafirmacraft:item.Ore:35>,
 <terrafirmacraft:item.Ore:36>,

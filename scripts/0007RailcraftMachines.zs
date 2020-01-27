@@ -3,94 +3,30 @@ import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 import minetweaker.oredict.IOreDictEntry;
 
-mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail>);
-mods.railcraft.Rolling.removeRecipe(<tc:copperRail>);
-mods.railcraft.Rolling.removeRecipe(<tc:steelRail>);
-mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rebar>);
-mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:1>);
-mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:3>);
-
-//crafting table
-recipes.addShaped(<minecraft:rail> * 64,
- [[<Railcraft:part.rail>, null, <Railcraft:part.rail>],
-  [<Railcraft:part.rail>, <Railcraft:part.railbed>, <Railcraft:part.rail>],
-  [<Railcraft:part.rail>, null, <Railcraft:part.rail>]]);
-                                             
-recipes.addShaped(<Railcraft:cube:7> * 4, 
-  [[<ore:stone>, <ore:stone>], 
-   [<ore:stone>, <ore:stone>]]);
-
-//rolling machine
-recipes.addShaped(<Railcraft:machine.alpha:8>,
-  [[<tfctech:item.Steel Pipe Frame>, <terrafirmacraft:item.Steel Tuyere>, <tfctech:item.Steel Pipe Frame>], 
-   [<ore:gearSteel>, <ore:gearSteel>, <terrafirmacraft:item.Steel Tuyere>], 
-   [<tfctech:item.Steel Pipe Frame>, <ProjRed|Core:projectred.core.part:15>, <tfctech:item.Steel Pipe Frame>]]);
-
-   
-recipes.addShaped(<Railcraft:part.tie:1> * 2, 
-  [[<Railcraft:slab:2>, <Railcraft:slab:2>, <Railcraft:slab:2>]]);
-
-//Water Tank Siding
-recipes.addShaped(<Railcraft:machine.alpha:14> * 6, 
-  [[<ore:plankWood>, <tfctech:item.Rubber>, <ore:plankWood>], 
-   [<ore:ingotIron>, <ore:materialGlue>, <ore:ingotIron>],
-   [<ore:plankWood>, <tfctech:item.Rubber>, <ore:plankWood>]]);
-   
-//Controller Circuit
-recipes.addShaped(<Railcraft:part.circuit>,
- [[null, <minecraft:repeater>, <tfcudarymod:item.Copper Wire>],
-  [<ore:materialGlue>, <tfcm:item.Circuit>, <ore:dustRedstone>],
-  [<tfcudarymod:item.Copper Wire>, <ore:dustRedstone>, <minecraft:comparator>]]);
-
-//Reciever Circuit
-recipes.addShaped(<Railcraft:part.circuit:1>,
- [[null, <minecraft:repeater>, <tfcudarymod:item.Copper Wire>],
-  [<ore:materialGlue>, <tfcm:item.Circuit>, <ore:dustRedstone>],
-  [<tfcudarymod:item.Copper Wire>, <ore:dustRedstone>, <ore:gemQuartz>]]);
-  
-//Signal Circuit  
-recipes.addShaped(<Railcraft:part.circuit:2>,
- [[null, <minecraft:repeater>, <tfcudarymod:item.Copper Wire>],
-  [<ore:materialGlue>, <tfcm:item.Circuit>, <ore:dustRedstone>],
-  [<tfcudarymod:item.Copper Wire>, <ore:dustRedstone>, <ore:gemChipped>]]);
-
-//Bloodstained Brick
-recipes.addShapeless(<Railcraft:brick.bloodstained:2>, [<terrafirmacraft:StoneSedSmooth:*>, <minecraft:rotten_flesh>]);
-recipes.addShapeless(<Railcraft:brick.bloodstained:2>, [<terrafirmacraft:StoneSedSmooth:*>, <ore:listAllmeatraw>]);
-
-//Solid Fuel Boiled
-recipes.addShaped(<Railcraft:machine.beta:5> * 6,
-  [[<ore:stoneBricks>, <terrafirmacraft:item.Steel Tuyere>, <ore:stoneBricks>],
-   [<ore:stoneBricks>, <catwalks:steelgrate>, <ore:stoneBricks>], 
-   [<ore:stoneBricks>, <terrafirmacraft:EarlyBloomery>, <ore:stoneBricks>]]);
-
-//Liquid Fuel Boiler
-recipes.addShaped(<Railcraft:machine.beta:6> * 6, 
-  [[<terrafirmacraft:item.Steel Sheet>, <terrafirmacraft:item.Steel Tuyere>, <terrafirmacraft:item.Steel Sheet>], 
-   [<ore:barsIron>, <tfctech:item.Steel Bucket Empty>, <ore:barsIron>], 
-   [<terrafirmacraft:item.Steel Sheet>, <ore:toolFlintSteel>,<terrafirmacraft:item.Steel Sheet>]]);
-
-//Rock Crusher
-recipes.addShaped(<Railcraft:machine.alpha:15> * 12, 
-  [[<minecraft:piston>, <terrafirmacraft:item.Steel Double Ingot>, <minecraft:piston>], 
-   [<terrafirmacraft:item.Steel Double Ingot>, <terrafirmacraft:item.Black Steel Double Sheet>, <terrafirmacraft:item.Steel Double Ingot>], 
-   [<minecraft:piston>, <terrafirmacraft:item.Steel Double Ingot>,<minecraft:piston>]]);
-
-
-val wires = [<tfctech:item.Tin Wire>,<tfctech:item.Copper Wire>,<tfctech:item.Gold Wire>,<tfctech:item.Aluminum Wire>, <tfctech:item.Electrum Wire>,<tfctech:item.Wrought Iron Wire>,<tfctech:item.Steel Wire>]as IItemStack[];
-
-val stripes = [<tfctech:item.Tin Stripe>,<tfctech:item.Copper Stripe>,<tfctech:item.Gold Stripe>,<tfctech:item.Aluminum Stripe>,<tfctech:item.Electrum Stripe>,<tfctech:item.Wrought Iron Stripe>,<tfctech:item.Steel Stripe>] as IItemStack[];
-
+//TFCtech Stripes to wires 
+val stripes = 
+[<tfctech:item.Tin Stripe>,
+<tfctech:item.Copper Stripe>,
+<tfctech:item.Gold Stripe>,
+<tfctech:item.Aluminum Stripe>,
+<tfctech:item.Electrum Stripe>,
+<tfctech:item.Wrought Iron Stripe>,
+<tfctech:item.Steel Stripe>] as IItemStack[];
+val wires =
+[<tfctech:item.Tin Wire>,
+<tfctech:item.Copper Wire>,
+<tfctech:item.Gold Wire>,
+<tfctech:item.Aluminum Wire>, 
+<tfctech:item.Electrum Wire>,
+<tfctech:item.Wrought Iron Wire>,
+<tfctech:item.Steel Wire>]as IItemStack[];
 mods.railcraft.Rolling.addShaped(<tfctech:item.Red Alloy Wire>*2, [[<ore:ingotRedAlloy>]]);
 for i, item in wires{
   mods.railcraft.Rolling.addShaped(wires[i], [[stripes[i]]]);
   
 }
 
-
-
-
-
+//Ingots to Double Ingots, Double Ingots to Plates, Plates to Double Plates
 //put tnc after things with double plates
 val ingots = [
 <terrafirmacraft:item.Bismuth Ingot>,
@@ -188,7 +124,32 @@ val plates = [
 <tnc:item.Ferromanganese_Sheet>,
 <tnc:item.Manganese_Sheet>] as IItemStack[];
 
-val doublePlates = [<terrafirmacraft:item.Bismuth Double Sheet>,<terrafirmacraft:item.Bismuth Bronze Double Sheet>,<terrafirmacraft:item.Black Bronze Double Sheet>,<terrafirmacraft:item.Black Steel Double Sheet>,<terrafirmacraft:item.Blue Steel Double Sheet>,<terrafirmacraft:item.Bronze Double Sheet>,<terrafirmacraft:item.Copper Double Sheet>,<terrafirmacraft:item.Wrought Iron Double Sheet>,<terrafirmacraft:item.Red Steel Double Sheet>,<terrafirmacraft:item.Rose Gold Double Sheet>,<terrafirmacraft:item.Steel Double Sheet>,<terrafirmacraft:item.Tin Double Sheet>,<terrafirmacraft:item.Zinc Double Sheet>,<terrafirmacraft:item.Brass Double Sheet>,<terrafirmacraft:item.Gold Double Sheet>,<terrafirmacraft:item.Lead Double Sheet>,<terrafirmacraft:item.Nickel Double Sheet>,<terrafirmacraft:item.Pig Iron Double Sheet>,<terrafirmacraft:item.Platinum Double Sheet>,<terrafirmacraft:item.Silver Double Sheet>,<terrafirmacraft:item.Sterling Silver Double Sheet>,<tfctech:item.Aluminum Double Sheet>,<tfctech:item.Electrum Double Sheet>,<tfctech:item.Constantan Double Sheet>,<tfctech:item.Invar Double Sheet>] as IItemStack[];
+val doublePlates = 
+[<terrafirmacraft:item.Bismuth Double Sheet>,
+<terrafirmacraft:item.Bismuth Bronze Double Sheet>,
+<terrafirmacraft:item.Black Bronze Double Sheet>,
+<terrafirmacraft:item.Black Steel Double Sheet>,
+<terrafirmacraft:item.Blue Steel Double Sheet>,
+<terrafirmacraft:item.Bronze Double Sheet>,
+<terrafirmacraft:item.Copper Double Sheet>,
+<terrafirmacraft:item.Wrought Iron Double Sheet>,
+<terrafirmacraft:item.Red Steel Double Sheet>,
+<terrafirmacraft:item.Rose Gold Double Sheet>,
+<terrafirmacraft:item.Steel Double Sheet>,
+<terrafirmacraft:item.Tin Double Sheet>,
+<terrafirmacraft:item.Zinc Double Sheet>,
+<terrafirmacraft:item.Brass Double Sheet>,
+<terrafirmacraft:item.Gold Double Sheet>,
+<terrafirmacraft:item.Lead Double Sheet>,
+<terrafirmacraft:item.Nickel Double Sheet>,
+<terrafirmacraft:item.Pig Iron Double Sheet>,
+<terrafirmacraft:item.Platinum Double Sheet>,
+<terrafirmacraft:item.Silver Double Sheet>,
+<terrafirmacraft:item.Sterling Silver Double Sheet>,
+<tfctech:item.Aluminum Double Sheet>,
+<tfctech:item.Electrum Double Sheet>,
+<tfctech:item.Constantan Double Sheet>,
+<tfctech:item.Invar Double Sheet>] as IItemStack[];
 for i, item in ingots{
   mods.railcraft.Rolling.addShaped(doubleIngots[i], 
   [[null,ingots[i],null],
@@ -209,55 +170,59 @@ for i, item in doublePlates{
   [null,plates[i],null]]);
 }
 
+
+//TFCtech Ceramic Plate
 mods.railcraft.Rolling.addShaped(<tfctech:item.Ceramic Plate>,
   [[null,null,null],
    [null,<ore:lumpClay>,null],
    [null,null,null]]);
 
-
+//Unshaped Press Mold
 mods.railcraft.Rolling.addShaped(<customitems:metal_press_mold_(unshaped)>,
   [[null,null,null],
    [null,<terrafirmacraft:item.Black Steel Double Sheet>,null],
    [null,null,null]]);
 
+//Wool To Yarn
 mods.railcraft.Rolling.addShaped(<terrafirmacraft:item.WoolYarn>*9,
   [[null,null,null],
    [null,<terrafirmacraft:item.Wool>,null],
    [null,null,null]]);
 
-
+//Steel-> Rebar 
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rebar>*10,
   [[null,null,<ore:ingotSteel>],
    [null,<ore:ingotSteel>,null],
    [<ore:ingotSteel>,null,null]]);
 
-
+//Iron->Rebar
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rebar>*5,
   [[null,null,<ore:ingotIron>],
    [null,<ore:ingotIron>,null],
    [<ore:ingotIron>,null,null]]);
+//Bronze -> Rebar
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rebar>*5,
   [[null,null,<ore:ingotBronze>],
    [null,<ore:ingotBronze>,null],
    [<ore:ingotBronze>,null,null]]);
-mods.railcraft.Rolling.addShaped(<Railcraft:part.rebar>*10,
-  [[null,null,<ore:ingotSteel>],
-   [null,<ore:ingotSteel>,null],
-   [<ore:ingotSteel>,null,null]]);
-    
+
+//Steel->Rails    
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*18,
   [[<ore:ingotSteel>,null,<ore:ingotSteel>],
    [<ore:ingotSteel>,null,<ore:ingotSteel>],
    [<ore:ingotSteel>,null,<ore:ingotSteel>]]);  
+//Iron-> Rails
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*12,
   [[<ore:ingotIron>,null,<ore:ingotIron>],
    [<ore:ingotIron>,null,<ore:ingotIron>],
-   [<ore:ingotIron>,null,<ore:ingotIron>]]);    
+   [<ore:ingotIron>,null,<ore:ingotIron>]]);   
+//TC Steel Rails   
 mods.railcraft.Rolling.addShaped(<tc:steelRail>*18,
   [[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],
    [null,null,null],
    [<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>]]);
    
+//TC Copper Rails
 mods.railcraft.Rolling.addShaped(<tc:copperRail>*12,
   [[<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],
    [null,null,null],
@@ -268,18 +233,20 @@ mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1> * 8,
 	[[<Railcraft:part.rail>, <minecraft:redstone>, <ore:ingotGold>], 
      [<Railcraft:part.rail>, <minecraft:redstone>, <ore:ingotGold>],
      [<Railcraft:part.rail>, <minecraft:redstone>, <ore:ingotGold>]]);
+
+//H.S. Rails
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3> * 8, 
 	[[<ore:ingotSteel>, <minecraft:blaze_powder>, <ore:ingotGold>], 
      [<ore:ingotSteel>, <minecraft:blaze_powder>, <ore:ingotGold>],
      [<ore:ingotSteel>, <minecraft:blaze_powder>, <ore:ingotGold>]]);   
 
+//TFCtech Inductor
 mods.railcraft.Rolling.addShaped(<tfctech:item.Inductor>, 
 	[[<tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>], 
      [<tfctech:item.Copper Wire>, null, <tfctech:item.Copper Wire>],
      [<tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>]]);  
 
-
-     
+//Railcraft Detectors    
 val detectors1 = [<Railcraft:detector:3>,<Railcraft:detector:8>,<Railcraft:detector:11>,<Railcraft:detector:12>,<Railcraft:detector:15>]as IItemStack[];
 val materials = [<minecraft:stonebrick:1>,<terrafirmastuff:clayStained2>,<Railcraft:cube:8>,<terrafirmacraft:item.ItemStoneBrick:12>,<ImmersiveEngineering:stoneDecoration:1>] as IItemStack[];
 val detectors2 = [<Railcraft:detector:2>,<Railcraft:detector:6>,<Railcraft:detector:7>,<Railcraft:detector:13>,<Railcraft:detector:14>,<Railcraft:detector:16>]as IItemStack[];
@@ -290,8 +257,7 @@ for i, item in detectors1{
   recipes.addShaped(detectors1[i], 
   [[materials[i], materials[i], materials[i]],
    [materials[i], <minecraft:stone_pressure_plate>, materials[i]], 
-   [materials[i], materials[i], materials[i]]]);
-  
+   [materials[i], materials[i], materials[i]]]);  
 }     
 
 for i, item in detectors2{
@@ -299,25 +265,6 @@ for i, item in detectors2{
   recipes.addShaped(detectors2[i], 
   [[ore[i], ore[i], ore[i]],
    [ore[i], <minecraft:stone_pressure_plate>, ore[i]], 
-   [ore[i], ore[i], ore[i]]]);
-  
+   [ore[i], ore[i], ore[i]]]); 
 }     
-     
-     
-//crusher recipes
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stonebrick>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_brick_stairs>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:5>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:1>);
-mods.railcraft.RockCrusher.removeRecipe(<Railcraft:stair:39>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:mossy_cobblestone>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:3>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_stairs>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:brick_block>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:brick_stairs>);
-mods.railcraft.RockCrusher.removeRecipe(<minecraft:stone_slab:4>);
-mods.railcraft.RockCrusher.removeRecipe(<Railcraft:stair:8>);     
-
-mods.railcraft.RockCrusher.addRecipe(<terrafirmacraft:StoneIgExSmooth:1>, false, false, [<Railcraft:cube:4>,<terrafirmacraft:item.LooseRock:12>*4, <terrafirmacraft:item.LooseRock:12> * 2, <Railcraft:dust>], [0.45, 1, 0.5, 0.25]);
 

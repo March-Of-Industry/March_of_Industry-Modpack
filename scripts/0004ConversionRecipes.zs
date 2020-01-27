@@ -4,6 +4,9 @@ recipes.addShapeless(<minecraft:quartz>, [<tfctech:item.Quartz>]);
 //TFC Sticks to Vanilla Stick
 recipes.addShapeless(<minecraft:stick>, [<terrafirmacraft:item.stick>,<terrafirmacraft:item.stick>,<terrafirmacraft:item.stick>]);
 
+//TFC Fertilizer->Forestry Fertilizer
+recipes.addShapeless(<Forestry:fertilizerCompound>,[<terrafirmacraft:item.Fertilizer>]);
+
 //TFC Clay <-> Minecraft Clay
 recipes.addShapeless(<minecraft:clay_ball>, [<terrafirmacraft:item.Clay>]);
 recipes.addShapeless(<terrafirmacraft:item.Clay>, [<minecraft:clay_ball>]);

@@ -26,6 +26,13 @@ recipes.addShaped(<Railcraft:slab:2>*2,
   [[null,<ore:itemChisel>.transformDamage(1)],
    [null,<Railcraft:cube:1>]]); 
 
+//Fine Copper Wire
+mods.railcraft.Rolling.addShaped(<tc:copperWireFine>,
+  [[<tfctech:item.Copper Wire>,<tfctech:item.Copper Wire>,null],
+   [null,<customitems:empty_spool>,null],
+   [null,null,null]]);
+
+
 //Project Red Motor
 recipes.addShaped(<ProjRed|Core:projectred.core.part:15> * 2,
   [[null, <ore:plateSteel>, null], 

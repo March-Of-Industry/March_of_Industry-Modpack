@@ -22,3 +22,10 @@ recipes.addShaped(<Translocator:translocator:1> * 2,
   [[<ore:dustRedstone>, <ore:pearlEnder>, <ore:dustRedstone>], 
    [<tfctech:item.Platinum Nugget>, <ore:craftingPiston>, <tfctech:item.Platinum Nugget>],
    [<ore:dustRedstone>, <ore:dyeBlue>, <ore:dustRedstone>]]);
+   
+//TFCtech
+  //Induction Smelter
+recipes.addShaped(<tfctech:InductionSmelter>,
+  [[<tfctech:item.Inductor>, <terrafirmacraft:Crucible>, <tfctech:item.Inductor>], 
+   [<tfctech:item.Inductor>, <tfctech:item.Circuit:1>, <tfctech:item.Inductor>], 
+   [<ore:plateSteel>, <ore:wireCopper>, <ImmersiveEngineering:metalDevice>]]);

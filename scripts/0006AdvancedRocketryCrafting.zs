@@ -1,3 +1,5 @@
+//Machine Recipes Are added through Advanced Rocketrys XML System in configs
+
 //Iridium Coil
 recipes.addShaped(<libVulpes:libVulpescoil0:10>, 
 [[<customitems:iridium_wire>, <customitems:iridium_wire>, <customitems:iridium_wire>], 
