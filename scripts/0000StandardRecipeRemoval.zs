@@ -62,6 +62,11 @@ recipes.remove(<ArchimedesShipsPlus:engine>);
 recipes.remove(<ArchimedesShipsPlus:balloon:*>);
 recipes.remove(<ArchimedesShipsPlus:floater>);
 recipes.remove(<ArchimedesShipsPlus:gauge>);
+recipes.remove(<ArchimedesShipsPlus:anchorPoint>);
+recipes.remove(<ArchimedesShipsPlus:stickyBuffer>);
+recipes.remove(<ArchimedesShipsPlus:crate_wood>);
+recipes.remove(<ArchimedesShipsPlus:buffer>);
+
 
 //Architecture Craft
 recipes.remove(<ArchitectureCraft:sawblade>);
@@ -93,6 +98,7 @@ recipes.remove(<ore:ingotTitanium>*9);
 recipes.remove(<ore:ingotOsmium>*9);
 recipes.remove(<ore:ingotBrass>*9);
 
+
 //Buildcraft Transport Pipes
 recipes.removeShaped(<BuildCraft|Transport:item.buildcraftPipe.pipeitemswood:*>);
 recipes.removeShaped(<BuildCraft|Transport:item.buildcraftPipe.pipeitemsemerald:*>);
@@ -121,6 +127,10 @@ recipes.remove(<CarpentersBlocks:blockCarpentersSafe>);
 recipes.remove(<CarpentersBlocks:blockCarpentersTorch>);
 recipes.remove(<CarpentersBlocks:itemCarpentersTile>);
 recipes.remove(<CarpentersBlocks:blockCarpentersDaylightSensor>);
+
+//Catwalks
+recipes.remove(<catwalks:steelgrate>);
+recipes.remove(<catwalks:blowtorch>);
 
 //Chisel
 recipes.remove(<chisel:concrete>);
@@ -182,6 +192,8 @@ recipes.remove(<malisisdoors:item.forcefieldItem>);
 
 //Electroblob's Wizardry
 recipes.remove(<wizardry:transportation_stone>);
+recipes.remove(<wizardry:arcane_workbench>);
+recipes.remove(<wizardry:magic_wand:*>);
 
 //ExtraTrees
 recipes.remove(<ExtraTrees:durableHammer>);
@@ -223,6 +235,18 @@ recipes.remove(<ImmersiveEngineering:material:1>);
 recipes.remove(<ImmersiveEngineering:material:4>);
 recipes.remove(<ImmersiveEngineering:metalDevice:11>);
 recipes.remove(<ImmersiveEngineering:metalDevice:9>);
+recipes.remove(<ImmersiveEngineering:woodenDevice:1>);
+recipes.remove(<ImmersiveEngineering:woodenDevice:2>);
+recipes.remove(<ImmersiveEngineering:woodenDevice:3>);
+recipes.remove(<ImmersiveEngineering:metalDecoration:6>);
+recipes.remove(<ImmersiveEngineering:metalDecoration:4>);
+recipes.remove(<ImmersiveEngineering:metalDevice2:6>);
+recipes.remove(<ImmersiveEngineering:metalDevice:14>);
+recipes.remove(<immersiveintegration:iiWireCoil>);
+recipes.remove(<immersiveintegration:redstoneWireConnector>);
+recipes.remove(<immersiveintegration:steelDecoration:1>);
+recipes.remove(<immersiveintegration:steelDecoration:2>);
+recipes.remove(<immersiveintegration:steelDecoration>);
 
 
 //Ingot to Block Conversion
@@ -306,6 +330,7 @@ recipes.remove(<OpenBlocks:elevator>);
 recipes.remove(<OpenBlocks:elevator_rotating>);
 recipes.remove(<OpenBlocks:guide>);
 recipes.remove(<OpenBlocks:builder_guide>);
+recipes.remove(<OpenBlocks:sleepingBag>);
 
 //Pistronics
 recipes.removeShapeless(<Pistronics2:Glue>, [<minecraft:wheat_seeds>, <minecraft:wheat_seeds>, <minecraft:sugar>, <minecraft:dye:15>]);
@@ -354,6 +379,7 @@ recipes.remove(<tc:recipeBook>);
 recipes.remove(<Railcraft:part.gear:3>);
 recipes.remove(<Railcraft:slab:2>*6);
 recipes.remove(<Railcraft:machine.alpha:8>);
+recipes.remove(<Railcraft:part.gear:2>);
 
 //RFtools
 recipes.remove(<rftools:smartWrenchItem>);
@@ -385,9 +411,9 @@ recipes.remove(<roadstuff:cone:2>);
 recipes.remove(<roadstuff:asphaltBlock>);
 
 //Rotarycraft
-//recipes.remove(<RotaryCraft:rotarycraft_item_borecraft:13>);
-//recipes.remove(<RotaryCraft:rotarycraft_item_enginecraft:10>);
-//recipes.remove(<RotaryCraft:rotarycraft_item_enginecraft:9>);
+recipes.remove(<RotaryCraft:rotarycraft_item_borecraft:13>);
+recipes.remove(<RotaryCraft:rotarycraft_item_enginecraft:10>);
+recipes.remove(<RotaryCraft:rotarycraft_item_enginecraft:9>);
 
 //Shurgents TFCTech
 recipes.remove(<tfctech:item.Red Alloy Mix>);
@@ -426,3 +452,4 @@ recipes.remove(<Translocator:translocator>);
 
 //ZTones
 recipes.remove(<Ztones:stoneTile>);
+

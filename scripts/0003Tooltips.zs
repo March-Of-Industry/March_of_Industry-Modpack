@@ -2,7 +2,7 @@
 <advancedRocketry:tile.electrolyser>.addTooltip(format.green("Formerly known as 'Electrolyser'"));
 
 //Bedrock Sword
-<tnc:item.Sword_Bedrock>.addShiftTooltip(format.red("Add Fortune Enchant with Energy Crystal Dust"));
+<tnc:item.Sword_Bedrock>.addShiftTooltip(format.red("Add Looting Enchant with Energy Crystal Dust"));
 <tnc:item.Sword_Bedrock>.addTooltip(format.white("<Shift>"));
 
 //Bedrock Mace

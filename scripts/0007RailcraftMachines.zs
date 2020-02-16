@@ -215,7 +215,13 @@ mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*18,
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*12,
   [[<ore:ingotIron>,null,<ore:ingotIron>],
    [<ore:ingotIron>,null,<ore:ingotIron>],
-   [<ore:ingotIron>,null,<ore:ingotIron>]]);   
+   [<ore:ingotIron>,null,<ore:ingotIron>]]);  
+//iron door
+mods.railcraft.Rolling.addShaped(<minecraft:iron_door>,
+  [[null,<ore:plateIron>,null],
+   [null,<ore:plateIron>,null],
+   [null,null,null]]);
+   
 //TC Steel Rails   
 mods.railcraft.Rolling.addShaped(<tc:steelRail>*18,
   [[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],
@@ -245,6 +251,13 @@ mods.railcraft.Rolling.addShaped(<tfctech:item.Inductor>,
 	[[<tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>], 
      [<tfctech:item.Copper Wire>, null, <tfctech:item.Copper Wire>],
      [<tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>]]);  
+//Steel Grate
+mods.railcraft.Rolling.addShaped(<catwalks:steelgrate>*16, 
+  [[<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>],
+  [<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>],
+  [<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>]]);
+
+
 
 //Railcraft Detectors    
 val detectors1 = [<Railcraft:detector:3>,<Railcraft:detector:8>,<Railcraft:detector:11>,<Railcraft:detector:12>,<Railcraft:detector:15>]as IItemStack[];

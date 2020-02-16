@@ -114,3 +114,10 @@ mods.immersiveengineering.CokeOven.addRecipe(<terrafirmacraft:item.coal:1> , 250
 //Cement
 mods.immersiveengineering.Crusher.addRecipe(<customitems:cement> * 8, <ImmersiveEngineering:material:13>, 4000);
 
+//Stainless steel
+//OutputStack, InputStack, SlagOutput, Time in Ticks, Energy per Tick, AdditiveArray, RecipeTypeString //Either create your own NEI pages with custom strings or use original ones
+mods.immersiveengineering.ArcFurnace.addRecipe(<tnc:item.Stainless_Steel_Ingot>*10, <tnc:item.Ferrochrome_Ingot>*4, null, 2000, 1000, [<ore:ingotFerromanganese>,<ore:ingotNickel>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>], "Alloying");
+
+//Heated CokeOvenWalls
+mods.immersiveengineering.BottlingMachine.addRecipe(<immersiveintegration:steelDecoration:1>, <immersiveintegration:steelDecoration>, <liquid:lavatfc> * 250);
+mods.immersiveengineering.BottlingMachine.addRecipe(<immersiveintegration:steelDecoration:1>, <immersiveintegration:steelDecoration>, <liquid:lava> * 250);

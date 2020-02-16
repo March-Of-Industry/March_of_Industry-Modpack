@@ -2,12 +2,16 @@
 val basicMotor = <ProjRed|Core:projectred.core.part:15>;
 val waterSegment = <ImmersiveEngineering:material:1>; 
 val basicWindBlade = <ImmersiveEngineering:material:2>;
+val advancedWindBlade = <ImmersiveEngineering:material:5>;
 val conveyor=<ImmersiveEngineering:metalDevice:11>;
 val toughFabric = <ImmersiveEngineering:material:4>;
 val industrialHemp = <ImmersiveEngineering:material:3>;
 val lightMechanicalComponent = <ImmersiveEngineering:material:11>;
 val heavyMechanicalComponent = <ImmersiveEngineering:material:12>;
-
+val basicWindmill = <ImmersiveEngineering:woodenDevice:2>;
+val advancedWindmill = <ImmersiveEngineering:woodenDevice:3>;
+val waterWheel = <ImmersiveEngineering:woodenDevice:1>;
+val radiator = <ImmersiveEngineering:metalDecoration:4>;
 //OutputStack, InputArray, InputFluid, Time in Ticks, BoxStack
 
 //Kinetic Dynamo
@@ -16,6 +20,24 @@ mods.forestry.ThermionicFabricator.addCast(<ImmersiveEngineering:metalDevice:9>,
    [<ore:stickSteel>, <ImmersiveEngineering:storage:8>, <ore:stickSteel>], 
    [<ore:plateSteel>, <ore:wireRed>, <ore:plateSteel>]],
    1000, null);
+   
+mods.forestry.ThermionicFabricator.addCast(<ImmersiveEngineering:metalDecoration:6>*2, 
+  [[<ore:plateBlackSteel>, <ore:wireRed>,<ore:plateBlackSteel>], 
+   [<ore:stickSteel>, <ImmersiveEngineering:storage:10>, <ore:stickSteel>], 
+   [<ore:plateBlackSteel>, <ore:wireRed>, <ore:plateBlackSteel>]],
+   1000, null);   
+
+mods.forestry.ThermionicFabricator.addCast(<customitems:radiator_coils>, 
+  [[<ore:plateBlackSteel>, <ImmersiveEngineering:metalDevice2:5>,<ore:plateBlackSteel>], 
+   [<RotaryCraft:rotarycraft_item_machine:74>, <ImmersiveEngineering:metalDevice2:5>, <RotaryCraft:rotarycraft_item_machine:74>], 
+   [<ore:plateBlackSteel>, <ImmersiveEngineering:metalDevice2:5>, <ore:plateBlackSteel>]],
+   500, null);
+
+mods.forestry.ThermionicFabricator.addCast(radiator*9, 
+  [[<ore:plateBlackSteel>, <ore:plateBlackSteel>,<ore:plateBlackSteel>], 
+   [<Magneticraft:item.motor>, <libVulpes:libVulpesproductfan:6>, <customitems:radiator_coils>], 
+   [<ImmersiveEngineering:metalDevice2:6>, <customitems:radiator_coils>, <customitems:radiator_coils>]],
+    1000, null);
    
 //Scented Gear
 mods.forestry.Carpenter.addRecipe(<ExtraBees:misc>, 
@@ -109,13 +131,13 @@ mods.forestry.Carpenter.addRecipe(conveyor*8,
   [[toughFabric, toughFabric, toughFabric], 
    [<ore:stickIron>, <tfcm:item.Gear>, <ore:stickIron>],
    [null, null, null]],
-   <liquid:seedoil>*250,1,null);
+   <liquid:seedoil>*250,1,basicMotor);
 
 mods.forestry.Carpenter.addRecipe(conveyor*8,
   [[toughFabric, toughFabric, toughFabric], 
    [<ore:stickIron>, <tfcm:item.Gear>, <ore:stickIron>],
    [null, null, null]],
-   <liquid:creosote>*250,1,null);   
+   <liquid:creosote>*250,1,basicMotor);   
    
 //Windmill Blade    
 mods.forestry.Carpenter.addRecipe(basicWindBlade,
@@ -124,10 +146,33 @@ mods.forestry.Carpenter.addRecipe(basicWindBlade,
    [<ore:treatedStick>, <ore:treatedStick>, null]],
   null,20,<customitems:nails>);
 
+//Graphite Ingot
+mods.forestry.Squeezer.addRecipe(<liquid:water>*0, <ImmersiveEngineering:metal:20> % 100, [<ImmersiveEngineering:metal:19> * 1], 20); 
+
+
 //Waterwheel Blade
 mods.forestry.Carpenter.addRecipe(waterSegment,
   [[null, <ore:treatedStick>, null], 
    [<ore:treatedStick>, <ore:plankTreatedWood>, <ore:treatedStick>],
    [<ore:plankTreatedWood>, <ore:treatedStick>, <ore:plankTreatedWood>]],
    null,20,<customitems:nails>); 
-   
+
+//Basic Windmill  
+mods.forestry.Carpenter.addRecipe(basicWindmill,
+  [[null, basicWindBlade, null], 
+   [basicWindBlade, <ore:stickIron>, basicWindBlade], 
+   [null, basicWindBlade, null]],
+  null,20,null);
+//Advanced Windmill
+mods.forestry.Carpenter.addRecipe(advancedWindmill,
+  [[advancedWindBlade, advancedWindBlade, advancedWindBlade], 
+   [advancedWindBlade, <ore:stickSteel>, advancedWindBlade], 
+   [advancedWindBlade, advancedWindBlade, advancedWindBlade]],
+  null,20,null);
+  
+//Waterwheel
+mods.forestry.Carpenter.addRecipe(waterWheel,
+  [[null, waterSegment, null], 
+   [waterSegment, <ore:stickSteel>, waterSegment], 
+   [null, waterSegment, null]],
+  null,20,null);

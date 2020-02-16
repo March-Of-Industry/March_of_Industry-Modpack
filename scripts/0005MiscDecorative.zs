@@ -105,7 +105,11 @@ recipes.addShaped(<minecraft:stone_slab>*2,
 recipes.addShaped(<minecraft:wool>,
   [[<terrafirmacraft:item.WoolCloth>, <terrafirmacraft:item.WoolCloth>], 
    [<terrafirmacraft:item.WoolCloth>, <terrafirmacraft:item.WoolCloth>]]);   
-
+  //Enchantment Table
+recipes.addShaped(<minecraft:enchanting_table>, 
+  [[<ore:gemFlawless>, <minecraft:book>, <ore:gemFlawless>], 
+   [<ore:gemFlawless>, <minecraft:carpet:14>, <ore:gemFlawless>], 
+   [<ore:gemFlawless>, <ore:obsidian>, <ore:gemFlawless>]]);
 //Moar Signs
 val signs = 
 [{SignTexture: "tf/bronze_sign"},

@@ -12,6 +12,7 @@ mods.immersiveengineering.ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:4>
 mods.immersiveengineering.ArcFurnace.removeRecipe(<ThermalFoundation:material:65>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<ThermalFoundation:material:69>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<foundry:foundryIngot:6>);
+mods.immersiveengineering.ArcFurnace.removeRecipe(<ImmersiveEngineering:metal:20>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<Magneticraft:item.ingotTungsten>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<ReactorCraft:reactorcraft_item_ingots>);
 mods.immersiveengineering.ArcFurnace.removeRecipe(<ReactorCraft:reactorcraft_item_ingots:2>);
@@ -110,11 +111,12 @@ mods.thermalexpansion.Furnace.removeRecipe(<minecraft:clay_ball>);
 mods.thermalexpansion.Furnace.removeRecipe(<ProjRed|Core:projectred.core.part:58>);
 mods.thermalexpansion.Furnace.removeRecipe(<roadstuff:itemBitumen:0>);
 mods.thermalexpansion.Furnace.removeRecipe(<minecraft:stone>);
+mods.thermalexpansion.Furnace.removeRecipe(<ImmersiveEngineering:metal:19>);
 	//Vanilla Furnace (Takes Output)
 furnace.remove(<ProjRed|Core:projectred.core.part:*>);
 furnace.remove(<chisel:concrete>);
 furnace.remove(<roadstuff:itemBitumen:1>);
-
+furnace.remove(<ImmersiveEngineering:metal:20>);
 //Induction Smelter (Takes Input)
 mods.thermalexpansion.Smelter.removeRecipe( <*>,<minecraft:sand>);
 mods.thermalexpansion.Smelter.removeRecipe(<ore:dustPyrotheum>,<*>);

@@ -12,7 +12,25 @@ recipes.addShaped(<astikoor:cargocart>,
   [[<ore:plankWood>, <ore:chestWood>, <ore:plankWood>], 
    [<ore:plankWood>, <ore:chestWood>, <ore:plankWood>], 
    [<astikoor:wheel>, <ore:plankWood>, <astikoor:wheel>]]); 
-   
+ 
+//Catwalks
+recipes.addShaped(<catwalks:blowtorch>,
+  [[<ore:toolFlintSteel>, null], 
+   [null, <ore:plateIron>]]);
+
+//Electroblob's Wizardry
+recipes.addShaped(<wizardry:arcane_workbench>, 
+  [[<ore:nuggetGold>, <ore:nuggetGold>, <ore:nuggetGold>], 
+   [<wizardry:magic_crystal>, <minecraft:carpet:10>, <wizardry:magic_crystal>], [<ore:dustLapis>, <minecraft:enchanting_table>, <ore:dustLapis>]]);
+val wand = <wizardry:magic_wand>;//.withTag({spells: [1, 1, 1, 1, 1]});
+recipes.addShaped(wand, 
+  [[null, <wizardry:magic_crystal>, <ore:gemExquisite>], 
+   [<wizardry:magic_crystal>, <ImmersiveEngineering:material>, <wizardry:magic_crystal>], [<ore:nuggetElectrum>, <wizardry:magic_crystal>, null]]);
+
+//Sleeping Bag
+recipes.addShaped(<OpenBlocks:sleepingBag>, 
+  [[<ore:materialWool>, <ore:materialWool>, <ore:materialWool>], [<ore:materialLeather>, <ore:materialLeather>, <ore:materialLeather>]]);
+
 //Translocator
 recipes.addShaped(<Translocator:translocator> * 2,
  [[<ore:dustRedstone>, <ore:pearlEnder>, <ore:dustRedstone>], 
@@ -29,3 +47,4 @@ recipes.addShaped(<tfctech:InductionSmelter>,
   [[<tfctech:item.Inductor>, <terrafirmacraft:Crucible>, <tfctech:item.Inductor>], 
    [<tfctech:item.Inductor>, <tfctech:item.Circuit:1>, <tfctech:item.Inductor>], 
    [<ore:plateSteel>, <ore:wireCopper>, <ImmersiveEngineering:metalDevice>]]);
+
