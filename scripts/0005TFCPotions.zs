@@ -1,3 +1,8 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
 // Interpreted from ciekma
 // http://terrafirmacraft.com/f/topic/9349-mt-scripts-for-potions-in-tfc/
 
@@ -51,6 +56,7 @@ mods.Terrafirmacraft.Barrel.addFluidCombination(cursedWitchWater * 10000, witchW
 
 
 // Fermented Spider Eye
+recipes.remove(<minecraft:fermented_spider_eye>);
 mods.Terrafirmacraft.Barrel.addItemConversion(<minecraft:fermented_spider_eye>, <minecraft:spider_eye>, <liquid:vinegar> * 500, 0, true, 12, true);
 
 //Netherwart

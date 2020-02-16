@@ -1,3 +1,36 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+//Doors (Malisis,Big Doors)
+recipes.remove(<BigDoors:door3x3>);
+recipes.remove(<BigDoors:door3x3:1>);
+recipes.remove(<BigDoors:door3x3:2>);
+recipes.remove(<BigDoors:door3x3:3>);
+recipes.remove(<BigDoors:door3x3:4>);
+recipes.remove(<BigDoors:door3x3:5>);
+recipes.remove(<BigDoors:metalDoors3x3:1>);
+recipes.remove(<BigDoors:metalDoors3x3>);
+recipes.remove(<malisisdoors:item.wood_sliding_door>);
+recipes.remove(<malisisdoors:item.saloon>);
+recipes.remove(<malisisdoors:garage_door>);
+recipes.remove(<malisisdoors:item.door_dark_oak>);
+recipes.remove(<malisisdoors:item.door_spruce>);
+recipes.remove(<malisisdoors:item.shoji_door>);
+recipes.remove(<malisisdoors:player_sensor>);
+recipes.remove(<malisisdoors:block_mixer>);
+recipes.remove(<malisisdoors:door_factory>);
+recipes.remove(<malisisdoors:item.rustyHandle>);
+recipes.remove(<malisisdoors:rustyLadder>);
+recipes.remove(<malisisdoors:rustyHatch>);
+recipes.remove(<malisisdoors:sliding_trapdoor>);
+recipes.remove(<malisisdoors:item.laboratory_door>);
+recipes.remove(<malisisdoors:item.factory_door>);
+recipes.remove(<malisisdoors:item.iron_sliding_door>);
+recipes.remove(<malisisdoors:item.forcefieldItem>);
+
+
 //Large Dark Oak Door
 recipes.addShaped(<BigDoors:door3x3:5>, 
   [[<terrafirmacraft:item.Hickory Door>, <terrafirmacraft:item.Hickory Door>], 

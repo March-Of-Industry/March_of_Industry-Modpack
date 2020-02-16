@@ -119,5 +119,6 @@ mods.immersiveengineering.Crusher.addRecipe(<customitems:cement> * 8, <Immersive
 mods.immersiveengineering.ArcFurnace.addRecipe(<tnc:item.Stainless_Steel_Ingot>*10, <tnc:item.Ferrochrome_Ingot>*4, null, 2000, 1000, [<ore:ingotFerromanganese>,<ore:ingotNickel>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>,<ore:ingotIron>], "Alloying");
 
 //Heated CokeOvenWalls
+recipes.remove(<immersiveintegration:steelDecoration:1>);
 mods.immersiveengineering.BottlingMachine.addRecipe(<immersiveintegration:steelDecoration:1>, <immersiveintegration:steelDecoration>, <liquid:lavatfc> * 250);
 mods.immersiveengineering.BottlingMachine.addRecipe(<immersiveintegration:steelDecoration:1>, <immersiveintegration:steelDecoration>, <liquid:lava> * 250);

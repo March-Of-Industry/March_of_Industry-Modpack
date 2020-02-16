@@ -1,3 +1,19 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+//Carpenters Blocks
+recipes.remove(<CarpentersBlocks:blockCarpentersSlope>);
+recipes.remove(<CarpentersBlocks:itemCarpentersBed>);
+recipes.remove(<CarpentersBlocks:itemCarpentersChisel>);
+recipes.remove(<CarpentersBlocks:itemCarpentersHammer>);
+recipes.remove(<CarpentersBlocks:blockCarpentersSafe>);
+recipes.remove(<CarpentersBlocks:blockCarpentersTorch>);
+recipes.remove(<CarpentersBlocks:itemCarpentersTile>);
+recipes.remove(<CarpentersBlocks:blockCarpentersDaylightSensor>);
+
+
 //Carpenters Slope
 recipes.addShaped(<CarpentersBlocks:blockCarpentersSlope> * 6,
   [[null, null,<ore:woodLumber>],

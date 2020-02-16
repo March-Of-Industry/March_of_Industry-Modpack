@@ -1,4 +1,14 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
 //Machine Recipes are added through RotaryCraft's Config system
+//Rotarycraft
+recipes.remove(<RotaryCraft:rotarycraft_item_borecraft:13>);
+recipes.remove(<RotaryCraft:rotarycraft_item_enginecraft:10>);
+recipes.remove(<RotaryCraft:rotarycraft_item_enginecraft:9>);
+
 
 //Stone Gear
 mods.forestry.Carpenter.addRecipe(<RotaryCraft:rotarycraft_item_enginecraft:10> * 2, 

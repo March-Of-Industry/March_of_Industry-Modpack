@@ -1,3 +1,7 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
 
 #Changed Damage inflicted by Immersive guns via config
 
@@ -12,7 +16,9 @@ recipes.addShapeless(<tnc:item.Mace_Bedrock>.withTag({ench: [{lvl: 5 as short, i
 <Magneticraft:item.iron_hammer>.maxDamage = 2500;
 
 //Project Red Screwdriver
+recipes.remove(<ProjRed|Core:projectred.core.screwdriver>);
 recipes.addShaped(<ProjRed|Core:projectred.core.screwdriver>, [[null, <ore:stickIron>], [<ore:stickWood>, <ore:dyeBlue>]]);
 
 //RFtools Smart wrench
+recipes.remove(<rftools:smartWrenchItem>);
 recipes.addShaped(<rftools:smartWrenchItem>, [[null, <ore:ingotSteel>], [<ore:stickWood>, <ore:dyeBlue>]]);

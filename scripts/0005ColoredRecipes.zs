@@ -3,6 +3,8 @@ import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 import minetweaker.oredict.IOreDictEntry;
 
+recipes.remove(<ProjRed|Transmission:projectred.transmission.wire>);
+
 val dyes = [<ore:dyeWhite>,<ore:dyeOrange>,<ore:dyeMagenta>,<ore:dyeLight_blue>,
             <ore:dyeYellow>,<ore:dyeLime>,<ore:dyePink>,<ore:dyeGray>,
             <ore:dyeSilver>,<ore:dyeCyan>,<ore:dyePurple>,<ore:dyeBlue>,

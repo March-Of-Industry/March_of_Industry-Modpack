@@ -1,3 +1,19 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+
+//Pistronics
+recipes.removeShapeless(<Pistronics2:Glue>, [<minecraft:wheat_seeds>, <minecraft:wheat_seeds>, <minecraft:sugar>, <minecraft:dye:15>]);
+recipes.removeShaped(<Pistronics2:Rod Block>);
+recipes.remove(<Pistronics2:Camou Paste>);
+recipes.removeShapeless(<Pistronics2:Super Glue>,[<Pistronics2:Glue>,<ore:dyeRed>]);
+recipes.removeShaped(<Pistronics2:Rod Block>.withTag({redstone: 0 as byte}));
+recipes.removeShapeless(<Pistronics2:Rod Block>.withTag({redstone: 0 as byte}), [<Pistronics2:Rod Part Block>.withTag({redstone: 0 as byte})]);
+recipes.remove(<Pistronics2:Stopper>);
+
+
 //Glue
 recipes.addShapeless(<Pistronics2:Glue>, [<ore:materialGlue>]);
 //Camo Paste

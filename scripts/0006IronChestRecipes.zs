@@ -1,3 +1,21 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+//Compartments
+recipes.remove(<BinnieCore:storage:4>);
+recipes.remove(<BinnieCore:storage>);
+recipes.remove(<BinnieCore:storage:5>);
+
+//Iron Chests
+recipes.remove(<IronChest:BlockIronChest:3>);
+recipes.remove(<IronChest:BlockIronChest:4>);
+recipes.remove(<IronChest:BlockIronChest>);
+recipes.remove(<IronChest:BlockIronChest:1>);
+
+
+
 //Copper Chest
 recipes.addShaped(<IronChest:BlockIronChest:3>, 
   [[<ore:plateCopper>, null, <ore:plateCopper>],

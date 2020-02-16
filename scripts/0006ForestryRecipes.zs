@@ -17,23 +17,27 @@ val stick = <ore:stickWood>;
 val nails = <customitems:nails>;
 val cglue = <tfcm:item.CaseinGlue>;
 //carpenter
+recipes.remove(<Forestry:factory:1>);
 recipes.addShaped(<Forestry:factory:1>, 
   [[<ore:itemSawSteel>, <ore:itemHammerSteel>, <ore:itemChiselSteel>],
   [bronze,tank, bronze], 
   [bronze,sturdyCasing,bronze ]]);
 
 //Sturdy Machine Casing
+recipes.remove(<Forestry:sturdyMachine>);
 recipes.addShaped(<Forestry:sturdyMachine>, 
   [[<ore:ingotBronze>, <tfcm:item.Gear>, <ore:ingotBronze>], 
    [<tfcm:item.Gear>, <Railcraft:part.circuit>, <tfcm:item.Gear>], 
    [<ore:ingotBronze>, <tfcm:item.Gear>, <ore:ingotBronze>]]);
 
 //Beehouse
+recipes.remove(<Forestry:apiculture:2>);
 recipes.addShaped(<Forestry:apiculture:2>, 
   [[lumber, lumber, lumber],
    [plank, comb, plank],
    [plank, plank, plank]]);
 //Apairy
+recipes.remove(<Forestry:apiculture>);
 recipes.addShaped(<Forestry:apiculture>, 
   [[lumber, lumber, lumber],
    [plank, <Forestry:impregnatedCasing>, plank],

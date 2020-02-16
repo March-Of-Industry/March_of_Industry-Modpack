@@ -206,7 +206,8 @@ mods.railcraft.Rolling.addShaped(<Railcraft:part.rebar>*5,
    [null,<ore:ingotBronze>,null],
    [<ore:ingotBronze>,null,null]]);
 
-//Steel->Rails    
+//Steel->Rails  
+recipes.remove(<Railcraft:part.rail>);  
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rail>*18,
   [[<ore:ingotSteel>,null,<ore:ingotSteel>],
    [<ore:ingotSteel>,null,<ore:ingotSteel>],
@@ -247,11 +248,13 @@ mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:3> * 8,
      [<ore:ingotSteel>, <minecraft:blaze_powder>, <ore:ingotGold>]]);   
 
 //TFCtech Inductor
+recipes.remove(<tfctech:item.Inductor>);
 mods.railcraft.Rolling.addShaped(<tfctech:item.Inductor>, 
 	[[<tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>], 
      [<tfctech:item.Copper Wire>, null, <tfctech:item.Copper Wire>],
      [<tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>, <tfctech:item.Copper Wire>]]);  
 //Steel Grate
+recipes.remove(<catwalks:steelgrate>);
 mods.railcraft.Rolling.addShaped(<catwalks:steelgrate>*16, 
   [[<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>],
   [<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>,<ImmersiveEngineering:material:15>],

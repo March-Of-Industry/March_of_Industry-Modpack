@@ -1,3 +1,8 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
 //Vanilla Quartz to TFC Quartz
 recipes.addShapeless(<minecraft:quartz>, [<tfctech:item.Quartz>]);  
 
@@ -31,6 +36,7 @@ recipes.addShaped(<terrafirmacraft:Hopper>, [[<minecraft:hopper>, <ore:itemHamme
 recipes.addShaped(<minecraft:hopper>, [[<terrafirmacraft:Hopper>, <ore:itemHammer>]]);
 
 //Roadstuff Concrete <-> IE Concrete
+recipes.remove(<roadstuff:concreteBlock>*4);
 recipes.addShapeless(<roadstuff:concreteBlock>, 
   [<ImmersiveEngineering:stoneDecoration:4>]);
 recipes.addShapeless(<ImmersiveEngineering:stoneDecoration:4>, 

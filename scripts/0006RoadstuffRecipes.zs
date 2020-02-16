@@ -1,3 +1,34 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+//RoadStuff
+recipes.remove(<roadstuff:asphaltArrow2:*>);
+recipes.remove(<roadstuff:asphaltArrow:*>);
+recipes.remove(<roadstuff:concreteArrow2:*>);
+recipes.remove(<roadstuff:concreteArrow:*>);
+recipes.remove(<roadstuff:concreteXCrossYellow:*>);
+recipes.remove(<roadstuff:concreteYCrossYellow:*>);
+recipes.remove(<roadstuff:asphaltXCrossYellow:*>);
+recipes.remove(<roadstuff:asphaltYCrossYellow:*>);
+recipes.remove(<roadstuff:concreteXCross:*>);
+recipes.remove(<roadstuff:concreteYCross:*>);
+recipes.remove(<roadstuff:asphaltXCross:*>);
+recipes.remove(<roadstuff:asphaltYCross:*>);
+recipes.remove(<roadstuff:asphaltCorner:*>);
+recipes.remove(<roadstuff:asphaltCorner2:*>);
+recipes.remove(<roadstuff:asphaltCorner3:*>);
+recipes.remove(<roadstuff:concreteCorner:*>);
+recipes.remove(<roadstuff:concreteCorner2:*>);
+recipes.remove(<roadstuff:concreteCorner3:*>);
+recipes.remove(<roadstuff:concreteLine:*>);
+recipes.remove(<roadstuff:asphaltLine:*>);
+recipes.remove(<roadstuff:cone:1>);
+recipes.remove(<roadstuff:cone>);
+recipes.remove(<roadstuff:cone:2>);
+recipes.remove(<roadstuff:asphaltBlock>);
+
 //Chisel Concrete Group
 mods.chisel.Groups.addGroup("concreteRoadSlab"); 
 mods.chisel.Groups.addVariation("concreteRoadSlab", <roadstuff:singleSlabConcreteCorner:1>);

@@ -1,3 +1,21 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
+//Archimedes Ships
+recipes.remove(<ArchimedesShipsPlus:seat>);
+recipes.remove(<ArchimedesShipsPlus:marker>);
+recipes.remove(<ArchimedesShipsPlus:engine>);
+recipes.remove(<ArchimedesShipsPlus:balloon:*>);
+recipes.remove(<ArchimedesShipsPlus:floater>);
+recipes.remove(<ArchimedesShipsPlus:gauge>);
+recipes.remove(<ArchimedesShipsPlus:anchorPoint>);
+recipes.remove(<ArchimedesShipsPlus:stickyBuffer>);
+recipes.remove(<ArchimedesShipsPlus:crate_wood>);
+recipes.remove(<ArchimedesShipsPlus:buffer>);
+
+
 val anchorPoint = <ArchimedesShipsPlus:anchorPoint>;
 val floater = <ArchimedesShipsPlus:floater>;
 val shoreBuffer = <ArchimedesShipsPlus:buffer>;

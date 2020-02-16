@@ -4,6 +4,10 @@ import minetweaker.item.IItemStack;
 import minetweaker.oredict.IOreDictEntry;
 
 
+//Immersive Engineering
+recipes.remove(<ImmersiveEngineering:material:15> * 4);
+recipes.remove(<ImmersiveEngineering:material:16> * 4);
+recipes.remove(<ImmersiveEngineering:material:14> * 4);
 
 //Plan Rules: Any=1, BendAny=2, BendLast=3, BendLastTwo=4, BendNotLast=5,  BendSecondFromLast=6, BendThirdFromLast=7, DrawAny=8, DrawLast=9, DrawLastTwo=10, DrawNotLast=11,
 // DrawSecondFromLast=12, DrawThirdFromLast=13, HitAny=14, HitLast=15, HitLastTwo=16, HitNotLast=17, HitSecondFromLast=18, HitThirdFromLast=19, PunchAny=20, PunchLast=21,
@@ -56,12 +60,17 @@ mods.Terrafirmacraft.Anvil.removeAnvilRecipe(<tfcm:item.Circuit>,<terrafirmacraf
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<tfcm:item.Circuit>,<terrafirmacraft:item.Copper Sheet>,<customitems:wood_substrate>,"circuit",1);
 
 //Iron Door
+recipes.remove(<minecraft:iron_door>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:iron_door>, <terrafirmacraft:item.Wrought Iron Sheet>,<terrafirmacraft:item.Wrought Iron Sheet>, "door", 3);
 
 //Drawer Keys
+recipes.remove(<StorageDrawers:upgradeLock>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:upgradeLock>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "drawKey", 1);
+recipes.remove(<StorageDrawers:shroudKey>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:shroudKey>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "conKey", 1);
+recipes.remove(<StorageDrawers:personalKey>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:personalKey>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "perKey", 1);
+recipes.remove(<StorageDrawers:personalKey:1>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:personalKey:1>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "cofhKey", 1);
 
 //HSLA Handle
@@ -84,6 +93,7 @@ mods.Terrafirmacraft.Anvil.addAnvilRecipe(<ArchitectureCraft:sawblade>, <terrafi
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<terrafirmacraft:Hopper>,<terrafirmacraft:item.Lead Double Sheet>,<terrafirmacraft:item.Lead Double Sheet>, "hopper", 3);
 
 //Cauldron
+recipes.remove(<minecraft:cauldron>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<minecraft:cauldron>, <terrafirmacraft:item.Black Steel Sheet>,<terrafirmacraft:item.Black Steel Sheet>, "cauldron", 5);
 
 //Rusty Handle

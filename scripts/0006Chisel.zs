@@ -1,8 +1,37 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
 mods.chisel.Groups.addGroup("carbon"); 
 mods.chisel.Groups.addVariation("carbon", <customitems:carbon_plated_block>);
 mods.chisel.Groups.addVariation("carbon", <customitems:carbon_plated_block_alt>);
 
 mods.chisel.Groups.addVariation("concrete", <ReactorCraft:reactorcraft_block_mats>);
+
+//Chisel
+recipes.remove(<chisel:concrete>);
+recipes.remove(<chisel:carpet_block>);
+recipes.remove(<chisel:chisel>);
+recipes.remove(<chisel:obsidianChisel>);
+recipes.remove(<chisel:diamondChisel>);
+recipes.remove(<chisel:woolen_clay:*>);
+recipes.remove(<chisel:purpur>);
+recipes.remove(<chisel:technical>);
+recipes.remove(<chisel:factoryblock>);
+recipes.remove(<chisel:futura>);
+recipes.remove(<chisel:laboratoryblock>);
+recipes.remove(<chisel:tyrian:15>);
+recipes.remove(<chisel:grimstone>);
+recipes.remove(<chisel:waterstone>);
+recipes.remove(<chisel:lavastone>);
+recipes.remove(<chisel:fantasyblock>);
+recipes.remove(<chisel:templeblock>);
+recipes.remove(<chisel:holystone>);
+recipes.remove(<chisel:voidstone>);
+recipes.remove(<chisel:rebel>);
+recipes.remove(<chisel:smashingrock>);
+
 
 
 //Carpet Block

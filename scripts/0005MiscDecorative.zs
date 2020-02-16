@@ -3,30 +3,36 @@ import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 import minetweaker.oredict.IOreDictEntry;
 
+
 //Architecture Craft
   //Sawblade
+  recipes.remove(<ArchitectureCraft:sawblade>);
 mods.railcraft.Rolling.addShaped(<ArchitectureCraft:sawblade>,
   [[null,null,null],
    [null,<terrafirmacraft:item.Wrought Iron Sheet>,null],
    [null,null,null]]);
 
   //Large Pulley
+  recipes.remove(<ArchitectureCraft:largePulley>);
 recipes.addShaped(<ArchitectureCraft:largePulley>, 
   [[null, <ore:woodLumber>, null], 
    [<ore:woodLumber>, <ore:stickWood>, <terrafirmacraft:item.SinglePlank>], 
    [null, <ore:woodLumber>, null]]);
    
   //Saw Bench
+  recipes.remove(<ArchitectureCraft:sawbench>);
 recipes.addShaped(<ArchitectureCraft:sawbench>, 
   [[<ore:ingotIron>, <ArchitectureCraft:sawblade>, <ore:ingotIron>],
    [<ore:stickWood>, <ArchitectureCraft:largePulley>, <ore:stickWood>],
    [<ore:stickWood>, <ore:woodLumber>, <ore:stickWood>]]);
    
 //Extra Trees Hammers
+  recipes.remove(<ExtraTrees:hammer>);
 recipes.addShaped(<ExtraTrees:hammer>, 
   [[<ore:plankWood>, <ore:ingotIron>, <ore:plankWood>], 
    [null, <ore:stickWood>, null], 
-   [null, <ore:stickWood>, null]]);
+   [null, <ore:stickWood>, null]]); 
+  recipes.remove(<ExtraTrees:durableHammer>);
 recipes.addShaped(<ExtraTrees:durableHammer>, 
   [[<ore:blockObsidian>, <ExtraTrees:hammer>, <ore:blockObsidian>], 
    [null, <ore:stickWood>, null], 
@@ -35,24 +41,29 @@ recipes.addShaped(<ExtraTrees:durableHammer>,
 
 //Forge Microblock Saws
   //Bronze Saw (Originally Stone)
+  recipes.remove(<ForgeMicroblock:sawStone>);
 recipes.addShaped(<ForgeMicroblock:sawStone>, 
   [[<ore:stickWood>, <RotaryCraft:rotarycraft_item_borecraft:13>, <RotaryCraft:rotarycraft_item_borecraft:13>], 
    [<ore:stickWood>, <terrafirmacraft:item.Bronze Saw Blade>, <RotaryCraft:rotarycraft_item_borecraft:13>]]);
   //Iron Saw
+  recipes.remove(<ForgeMicroblock:sawIron>);
 recipes.addShaped(<ForgeMicroblock:sawIron>, 
   [[<ore:stickWood>, <RotaryCraft:rotarycraft_item_borecraft:13>, <RotaryCraft:rotarycraft_item_borecraft:13>],
    [<ore:stickWood>, <terrafirmacraft:item.Wrought Iron Saw Blade>, <RotaryCraft:rotarycraft_item_borecraft:13>]]);
   //Blue Steel Saw (Originally Diamond)
+  recipes.remove(<ForgeMicroblock:sawDiamond>);
 recipes.addShaped(<ForgeMicroblock:sawDiamond>, 
   [[<ore:stickWood>, <RotaryCraft:rotarycraft_item_borecraft:13>, <RotaryCraft:rotarycraft_item_borecraft:13>], 
    [<ore:stickWood>, <terrafirmacraft:item.Blue Steel Saw Blade>, <RotaryCraft:rotarycraft_item_borecraft:13>]]);
 
 //Little Tiles
   //Color Tube
+  recipes.remove(<littletiles:colorTube>);
 recipes.addShaped(<littletiles:colorTube>, 
   [[null, <ore:itemRubber>, null], 
    [<ore:itemRubber>, <ore:dyeBlack>, <ore:itemRubber>]]);
   //Rubber Mallet
+  recipes.remove(<littletiles:rubberMallet>);
 recipes.addShaped(<littletiles:rubberMallet>,
   [[<tfctech:item.Rubber>, <ore:itemRubber>, <tfctech:item.Rubber>], 
    [<ore:itemRubber>, <ore:stickWood>, <ore:itemRubber>], 
@@ -62,21 +73,25 @@ recipes.addShaped(<littletiles:recipe>,
   [[<ore:materialPaper>, <minecraft:feather>], 
    [<ore:dyeBlack>, null]]);
   //Container
+  recipes.remove(<littletiles:container>);
 recipes.addShaped(<littletiles:container>, 
   [[null, <ore:plateIron>, null],
    [<ore:plateIron>, <littletiles:hammer>, <ore:plateIron>], 
    [null, <ore:plateIron>, null]]);
   //Wrench
+  recipes.remove(<littletiles:wrench>);
 recipes.addShaped(<littletiles:wrench>, 
   [[null,<ore:ingotIron>], 
    [null,<ore:stickWood>], 
    [null,<ore:dustLapis>]]);
   //Saw
+  recipes.remove(<littletiles:saw>);
 recipes.addShaped(<littletiles:saw>,
   [[null, <ore:ingotIron>],
    [null, <ore:ingotIron>], 
    [<ore:dustLapis>, <ore:stickWood>]]);
-  //Hammer
+  //Hammer 
+  recipes.remove(<littletiles:hammer>);
 recipes.addShaped(<littletiles:hammer>,
  [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], 
   [<ore:dustLapis>, <ore:stickWood>, null], 
@@ -84,6 +99,7 @@ recipes.addShaped(<littletiles:hammer>,
 
 //Minecraft
   //Brick Block
+  recipes.remove(<minecraft:brick_block>);
 recipes.addShaped(<minecraft:brick_block> * 4, 
   [[<ore:ingotBrick>, <terrafirmacraft:item.Mortar>, <ore:ingotBrick>], 
    [<terrafirmacraft:item.Mortar>, <ore:ingotBrick>, <terrafirmacraft:item.Mortar>],
@@ -93,7 +109,8 @@ recipes.addShaped(<minecraft:jukebox>,
   [[<minecraft:noteblock>, <ore:stripeIron>, <minecraft:noteblock>],
    [<ore:dustRedstone>, <tfcm:item.Gear>, <ore:dustRedstone>], 
    [<minecraft:noteblock>, <ore:dustRedstone>, <minecraft:noteblock>]]);
-  //Quartz Block                                                   
+  //Quartz Block    
+  recipes.remove(<minecraft:quartz_block>);  
 recipes.addShaped(<minecraft:quartz_block>, 
   [[<ore:gemQuartz>, <ore:gemQuartz>], 
    [<ore:gemQuartz>, <ore:gemQuartz>]]);
@@ -111,6 +128,7 @@ recipes.addShaped(<minecraft:enchanting_table>,
    [<ore:gemFlawless>, <minecraft:carpet:14>, <ore:gemFlawless>], 
    [<ore:gemFlawless>, <ore:obsidian>, <ore:gemFlawless>]]);
 //Moar Signs
+recipes.remove(<MoarSigns:MoarSignsItem:1>);
 val signs = 
 [{SignTexture: "tf/bronze_sign"},
 {SignTexture: "tf/lead_sign"},
@@ -149,6 +167,7 @@ for i,IData in signs
   
 //Ztones
   //Stone Tile
+  recipes.remove(<Ztones:stoneTile>);
 recipes.addShaped(<Ztones:stoneTile> * 8, 
   [[<ore:slabStone>, <ore:slabStone>, null], 
    [<ore:slabStone>, <ore:stone>, <ore:slabStone>], 

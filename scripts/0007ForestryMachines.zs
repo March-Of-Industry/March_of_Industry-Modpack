@@ -1,3 +1,7 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
 
 val basicMotor = <ProjRed|Core:projectred.core.part:15>;
 val waterSegment = <ImmersiveEngineering:material:1>; 
@@ -15,12 +19,14 @@ val radiator = <ImmersiveEngineering:metalDecoration:4>;
 //OutputStack, InputArray, InputFluid, Time in Ticks, BoxStack
 
 //Kinetic Dynamo
+recipes.remove(<ImmersiveEngineering:metalDevice:9>);
 mods.forestry.ThermionicFabricator.addCast(<ImmersiveEngineering:metalDevice:9>, 
   [[<ore:plateSteel>, <ore:wireRed>,<ore:plateSteel>], 
    [<ore:stickSteel>, <ImmersiveEngineering:storage:8>, <ore:stickSteel>], 
    [<ore:plateSteel>, <ore:wireRed>, <ore:plateSteel>]],
    1000, null);
-   
+//Generator Block
+recipes.remove(<ImmersiveEngineering:metalDecoration:6>);
 mods.forestry.ThermionicFabricator.addCast(<ImmersiveEngineering:metalDecoration:6>*2, 
   [[<ore:plateBlackSteel>, <ore:wireRed>,<ore:plateBlackSteel>], 
    [<ore:stickSteel>, <ImmersiveEngineering:storage:10>, <ore:stickSteel>], 
@@ -32,7 +38,8 @@ mods.forestry.ThermionicFabricator.addCast(<customitems:radiator_coils>,
    [<RotaryCraft:rotarycraft_item_machine:74>, <ImmersiveEngineering:metalDevice2:5>, <RotaryCraft:rotarycraft_item_machine:74>], 
    [<ore:plateBlackSteel>, <ImmersiveEngineering:metalDevice2:5>, <ore:plateBlackSteel>]],
    500, null);
-
+//Radiator
+recipes.remove(<ImmersiveEngineering:metalDecoration:4>);
 mods.forestry.ThermionicFabricator.addCast(radiator*9, 
   [[<ore:plateBlackSteel>, <ore:plateBlackSteel>,<ore:plateBlackSteel>], 
    [<Magneticraft:item.motor>, <libVulpes:libVulpesproductfan:6>, <customitems:radiator_coils>], 
@@ -61,6 +68,7 @@ mods.forestry.Carpenter.addRecipe(<terrafirmacraft:item.WoolCloth>,
    null,5,null);
    
 //Tough Fabric
+recipes.remove(<ImmersiveEngineering:material:4>);
 mods.forestry.Carpenter.addRecipe(toughFabric , 
   [[industrialHemp, industrialHemp, industrialHemp],
    [industrialHemp, industrialHemp, industrialHemp], 
@@ -68,6 +76,7 @@ mods.forestry.Carpenter.addRecipe(toughFabric ,
    <liquid:creosote>*25,5,null);
 
 //Thermionic Fabricator
+recipes.remove(<Forestry:factory2>);
 mods.forestry.Carpenter.addRecipe(<Forestry:factory2>, 
   [[<ore:ingotSteel>, <ore:craftingTableWood>, <ore:ingotSteel>],
    [<tfctech:InductionSmelter>, <Forestry:hardenedMachine>, <ore:ingotSteel>], 
@@ -75,6 +84,7 @@ mods.forestry.Carpenter.addRecipe(<Forestry:factory2>,
    <liquid:liquid_dye.silver> * 1000,20,null);
 
 //Light Engineering Block 
+recipes.remove(<ImmersiveEngineering:metalDecoration:7>);
 mods.forestry.Carpenter.addRecipe(<ImmersiveEngineering:metalDecoration:7>*4,
   [[<terrafirmacraft:item.Wrought Iron Sheet>, lightMechanicalComponent, <terrafirmacraft:item.Wrought Iron Sheet>], 
    [<ore:stickIron>, <ore:gearCopper>, <ore:stickIron>],
@@ -88,6 +98,7 @@ mods.forestry.Carpenter.addRecipe(<ImmersiveEngineering:metalDecoration:7>*4,
    <liquid:creosote> * 1000,20,null);   
 
 //Heavy Engineering Block   
+recipes.remove(<ImmersiveEngineering:metalDecoration:5>);
 mods.forestry.Carpenter.addRecipe(<ImmersiveEngineering:metalDecoration:5> * 4, 
   [[<terrafirmacraft:item.Steel Sheet>, heavyMechanicalComponent, <terrafirmacraft:item.Steel Sheet>], 
    [<ore:craftingPiston>, <ore:gearBlueSteel>, <ore:craftingPiston>], 
@@ -101,6 +112,7 @@ mods.forestry.Carpenter.addRecipe(<ImmersiveEngineering:metalDecoration:5> * 4,
    <liquid:creosote> * 1000,20,null);
    
 //Light Engineering Component
+recipes.remove(<ImmersiveEngineering:material:11>);
 mods.forestry.Carpenter.addRecipe(lightMechanicalComponent*2, 
   [[null, <ore:plateIron>, null],
    [<ore:stickIron>, <ore:ingotCopper>, <ore:stickIron>], 
@@ -114,6 +126,7 @@ mods.forestry.Carpenter.addRecipe(lightMechanicalComponent*2,
    <liquid:creosote> * 250,20,<Railcraft:part.gear:3>);
 
 //Heavy Engineering Component   
+recipes.remove(<ImmersiveEngineering:material:12>);
 mods.forestry.Carpenter.addRecipe(heavyMechanicalComponent*2, 
   [[null, <ore:plateSteel>, null],
    [<ore:stickSteel>, <ore:ingotBlackSteel>, <ore:stickSteel>], 
@@ -127,6 +140,7 @@ mods.forestry.Carpenter.addRecipe(heavyMechanicalComponent*2,
    <liquid:creosote> * 250,20,<Railcraft:part.gear:3>);
 
 //Conveyor Belt
+recipes.remove(<ImmersiveEngineering:metalDevice:11>);
 mods.forestry.Carpenter.addRecipe(conveyor*8,
   [[toughFabric, toughFabric, toughFabric], 
    [<ore:stickIron>, <tfcm:item.Gear>, <ore:stickIron>],
@@ -140,6 +154,7 @@ mods.forestry.Carpenter.addRecipe(conveyor*8,
    <liquid:creosote>*250,1,basicMotor);   
    
 //Windmill Blade    
+recipes.remove(<ImmersiveEngineering:material:2>);
 mods.forestry.Carpenter.addRecipe(basicWindBlade,
   [[<ore:plankTreatedWood>, <ore:plankTreatedWood>, null], 
    [<ore:treatedStick>, <ore:treatedStick>, <ore:plankTreatedWood>], 
@@ -151,6 +166,7 @@ mods.forestry.Squeezer.addRecipe(<liquid:water>*0, <ImmersiveEngineering:metal:2
 
 
 //Waterwheel Blade
+recipes.remove(<ImmersiveEngineering:material:1>);
 mods.forestry.Carpenter.addRecipe(waterSegment,
   [[null, <ore:treatedStick>, null], 
    [<ore:treatedStick>, <ore:plankTreatedWood>, <ore:treatedStick>],
@@ -158,12 +174,14 @@ mods.forestry.Carpenter.addRecipe(waterSegment,
    null,20,<customitems:nails>); 
 
 //Basic Windmill  
+recipes.remove(<ImmersiveEngineering:woodenDevice:2>);
 mods.forestry.Carpenter.addRecipe(basicWindmill,
   [[null, basicWindBlade, null], 
    [basicWindBlade, <ore:stickIron>, basicWindBlade], 
    [null, basicWindBlade, null]],
   null,20,null);
 //Advanced Windmill
+recipes.remove(<ImmersiveEngineering:woodenDevice:3>);
 mods.forestry.Carpenter.addRecipe(advancedWindmill,
   [[advancedWindBlade, advancedWindBlade, advancedWindBlade], 
    [advancedWindBlade, <ore:stickSteel>, advancedWindBlade], 
@@ -171,6 +189,7 @@ mods.forestry.Carpenter.addRecipe(advancedWindmill,
   null,20,null);
   
 //Waterwheel
+recipes.remove(<ImmersiveEngineering:woodenDevice:1>);
 mods.forestry.Carpenter.addRecipe(waterWheel,
   [[null, waterSegment, null], 
    [waterSegment, <ore:stickSteel>, waterSegment], 

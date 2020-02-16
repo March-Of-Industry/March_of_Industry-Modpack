@@ -1,3 +1,8 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
 //Cement
 recipes.addShapeless(<customitems:cement>*2,[<terrafirmacraft:Sand:6>,<ore:lumpClay>]);
 
@@ -12,6 +17,7 @@ recipes.addShapeless(<tfctech:item.Vulcanizing Agents> * 2, [<ore:dustSulfur>,<o
 recipes.addShapeless(<tfctech:item.Vulcanizing Agents> * 2, [<ore:dustSulfur>,<ore:dustSulfur>, <ore:dustChalk>]);
 
 //Red Alloy Mix
+recipes.remove(<tfctech:item.Red Alloy Mix>);
 recipes.addShaped(<tfctech:item.Red Alloy Mix> * 4, [[<ore:dustRedstone>, <ore:dustCopper>,<ore:dustCopper>,<ore:dustCopper>]]);
 
 //Glowstone Dust
@@ -34,6 +40,8 @@ mods.railcraft.Rolling.addShaped(<tc:copperWireFine>,
 
 
 //Project Red Motor
+recipes.remove(<ProjRed|Core:projectred.core.part:15>);
+recipes.remove(<ProjRed|Core:projectred.core.part:15>);
 recipes.addShaped(<ProjRed|Core:projectred.core.part:15> * 2,
   [[null, <ore:plateSteel>, null], 
    [<tfctech:item.Red Alloy Wire>, <tc:copperWireFine>, <ore:stickSteel>], 

@@ -1,5 +1,8 @@
+import minetweaker.data.IData;
+import minetweaker.item.IIngredient;
 import minetweaker.item.IItemStack;
 import minetweaker.oredict.IOreDictEntry;
+
 
 //Arc Furnace Immersive Engineering (Takes Output)
 mods.immersiveengineering.ArcFurnace.removeRecipe(<minecraft:iron_ingot>);

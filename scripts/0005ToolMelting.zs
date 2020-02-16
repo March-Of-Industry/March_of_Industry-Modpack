@@ -1,5 +1,8 @@
-import minetweaker.item.IItemStack;
+import minetweaker.data.IData;
 import minetweaker.item.IIngredient;
+import minetweaker.item.IItemStack;
+import minetweaker.oredict.IOreDictEntry;
+
 import mods.MTUtils.Utils;
 val meltRate = 0.35 as float;
 
