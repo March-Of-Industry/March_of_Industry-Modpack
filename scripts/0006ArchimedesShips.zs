@@ -37,6 +37,7 @@ val glassPane = <ore:paneGlassColorless>;
 val steelIngot = <ore:ingotSteel>;
 val matString = <ore:materialString>;
 val waterBucket = <ore:bucketWater>;
+val toughFabric = <ImmersiveEngineering:material:4>;
 //Anchor Point
 recipes.addShaped(anchorPoint,
   [[rope,ironRod,rope],
@@ -49,6 +50,12 @@ recipes.addShaped(whiteBallon * 2,
  [[matString, cloth, matString],
   [cloth, null, cloth], 
   [matString, cloth, matString]]);  
+
+recipes.addShaped(whiteBallon * 2,
+ [[matString, toughFabric, matString],
+  [toughFabric, null, toughFabric], 
+  [matString, toughFabric, matString]]);  
+
 
 	//Any Ballon -> White Ballon
 recipes.addShaped(whiteBallon * 8, 

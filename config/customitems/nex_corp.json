@@ -63,6 +63,12 @@
           "creativeTab": "Nex Corp Solutions"
         },
         {
+          "name": "Block Mold",
+          "textureName": "mold_block",
+          "maxStackSize": 1,
+          "creativeTab": "Nex Corp Solutions"
+        },
+        {
           "name": "Empty Spool",
           "textureName": "empty_spool",
           "maxStackSize": 64,
@@ -109,6 +115,138 @@
             "textureName": "wood_substrate",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Radiator Coils",
+            "textureName": "radiator_coils",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Sodium Hydroxide",
+            "textureName": "sodium_hydroxide",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Sodium Hexafluoroaluminate",
+            "textureName": "sodium_hexafluoroaluminate",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Cyclohexanone Oxime",
+            "textureName": "cyclohexanone_oxime",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Train Bogie(Single Axle)",
+            "textureName": "single_bogie",
+            "maxStackSize": 16,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Train Bogie(Double Axle)",
+            "textureName": "double_bogie",
+            "maxStackSize": 8,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Train Bogie(Triple Axle)",
+            "textureName": "triple_bogie",
+            "maxStackSize": 4,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Steam Piston",
+            "textureName": "steam_piston",
+            "maxStackSize": 16,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Train Coupler",
+            "textureName": "train_coupler",
+            "maxStackSize": 32,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Coupling Arm",
+            "textureName": "coupling_arm",
+            "maxStackSize": 16,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Train Brakes",
+            "textureName": "train_brakes",
+            "maxStackSize": 32,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Steel Wheel",
+            "textureName": "steel_wheel",
+            "maxStackSize": 32,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Iron Wheel",
+            "textureName": "iron_wheel",
+            "maxStackSize": 32,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Copper Coin",
+            "textureName": "copper_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Silver Coin",
+            "textureName": "silver_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Gold Coin",
+            "textureName": "gold_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Platinum Coin",
+            "textureName": "Platinum_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Black Steel Coin",
+            "textureName": "black_steel_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Stainless Steel Coin",
+            "textureName": "stainless_steel_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Titanium Coin",
+            "textureName": "titanium_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Tungsten Coin",
+            "textureName": "tungsten_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
+        },
+        {
+            "name": "Bedrock Coin",
+            "textureName": "bedrock_coin",
+            "maxStackSize": 64,
+            "creativeTab": "Nex Corp Solutions"
         }
     ],
     "blocks" : 
@@ -136,9 +274,218 @@
             "name":"Witchwater",
             "textureName": "witchwater",
             "temperature": 300,
-            
+            "creativeTab": "Nex Corp Solutions",
             "density": 1000,
             "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Naptha",
+            "textureName": "naptha",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Benzene",
+            "textureName": "benzene",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": true,
+            "flowLength": 5
+        },
+        {
+            "name":"Propene",
+            "textureName": "propene",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Ethylene",
+            "textureName": "ethylene",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": true,
+            "flowLength": 5
+        },
+        {
+            "name":"Cyclohexylbenzene-1-Hydroperoxide",
+            "textureName": "cyclohexylbenzene",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Hydroxylamine",
+            "textureName": "hydroxylamine",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Phenol",
+            "textureName": "phenol",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Nylon",
+            "textureName": "nylon",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Bisphenol-A Feedstock",
+            "textureName": "bisphenol_a_feedstock",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Bisphenol-A",
+            "textureName": "bisphenol_a",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Epoxy Resin",
+            "textureName": "epoxy_resin",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Epichlorohydrin",
+            "textureName": "epichlorohydrin",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Isomeric Alchohol Mixture",
+            "textureName": "isomeric_alchohol_mixture",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Cumene",
+            "textureName": "cumene",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Cumene Hydroperoxide",
+            "textureName": "cumene_hydroperoxide",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Isoprene",
+            "textureName": "isoprene",
+            "temperature": 400,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Hydrofluoric Acid",
+            "textureName": "hydrofluoric_acid",
+            "temperature": 300,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
+            "viscosity": 1000,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Acetone",
+            "textureName": "acetone",
+            "temperature": 300,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 784,
+            "viscosity": 350,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Mercury",
+            "textureName": "mercury",
+            "temperature": 300,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 13600,
+            "viscosity": 1500,            
             "lightLevel": 1.0,
             "isGas": false,
             "flowLength": 5

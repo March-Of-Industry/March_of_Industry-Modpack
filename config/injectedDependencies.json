@@ -668,10 +668,6 @@
       },
       {
         "type": "before",
-        "target": "bq_themed"
-      },
-      {
-        "type": "before",
         "target": "ThermalDynamics"
       },
       {

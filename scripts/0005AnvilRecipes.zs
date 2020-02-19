@@ -21,6 +21,10 @@ game.setLocalization("gui.plans.door", "Door");
 
 mods.Terrafirmacraft.Anvil.addPlanRecipe("drawKey", 14, 14, 14);
 game.setLocalization("gui.plans.drawkey", "Drawer Key");
+mods.Terrafirmacraft.Anvil.addPlanRecipe("drawUp", 14, 14, 14);
+game.setLocalization("gui.plans.drawUp", "Drawer Upgrade");
+
+
 mods.Terrafirmacraft.Anvil.addPlanRecipe("ConKey", 14, 14, 14);
 game.setLocalization("gui.plans.conkey", "Concealment Key");
 mods.Terrafirmacraft.Anvil.addPlanRecipe("perKey", 14, 14, 14);
@@ -72,6 +76,15 @@ recipes.remove(<StorageDrawers:personalKey>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:personalKey>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "perKey", 1);
 recipes.remove(<StorageDrawers:personalKey:1>);
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:personalKey:1>,<terrafirmacraft:item.Gold Ingot>,<StorageDrawers:upgradeTemplate>, "cofhKey", 1);
+
+//drawer Upgrades
+recipes.remove(<StorageDrawers:upgrade:2>);
+recipes.remove(<StorageDrawers:upgrade:3>);
+recipes.remove(<StorageDrawers:upgrade:4>);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:upgrade:2>,<terrafirmacraft:item.Bronze Double Sheet>,<StorageDrawers:upgradeTemplate>, "drawUp", 2);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:upgrade:3>,<terrafirmacraft:item.Wrought Iron Double Sheet>,<StorageDrawers:upgradeTemplate>, "drawUp", 3);
+mods.Terrafirmacraft.Anvil.addAnvilRecipe(<StorageDrawers:upgrade:4>,<terrafirmacraft:item.Black Steel Double Sheet>,<StorageDrawers:upgradeTemplate>, "drawUp", 5);
+
 
 //HSLA Handle
 mods.Terrafirmacraft.Anvil.addAnvilRecipe(<tnc:item.Handle_HSLA>, <RotaryCraft:rotarycraft_item_shaftcraft:1>, "handle", 6);

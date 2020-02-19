@@ -33,6 +33,20 @@ mods.forestry.ThermionicFabricator.addCast(<ImmersiveEngineering:metalDecoration
    [<ore:plateBlackSteel>, <ore:wireRed>, <ore:plateBlackSteel>]],
    1000, null);   
 
+recipes.remove(<StorageDrawers:upgrade:5>);
+mods.forestry.ThermionicFabricator.addCast(<StorageDrawers:upgrade:5>, 
+  [[null, <terrafirmacraft:item.Red Steel Sheet>,null], 
+   [null, <StorageDrawers:upgradeTemplate>, null], 
+   [null, <terrafirmacraft:item.Blue Steel Sheet>, null]],
+   500, null);  
+
+recipes.remove(<StorageDrawers:upgrade:6>);
+mods.forestry.ThermionicFabricator.addCast(<StorageDrawers:upgrade:6>, 
+  [[null, <tnc:item.Stainless_Steel_Sheet>,null], 
+   [null, <StorageDrawers:upgradeTemplate>, null], 
+   [null, <tnc:item.Stainless_Steel_Sheet>, null]],
+   500, null);  
+
 mods.forestry.ThermionicFabricator.addCast(<customitems:radiator_coils>, 
   [[<ore:plateBlackSteel>, <ImmersiveEngineering:metalDevice2:5>,<ore:plateBlackSteel>], 
    [<RotaryCraft:rotarycraft_item_machine:74>, <ImmersiveEngineering:metalDevice2:5>, <RotaryCraft:rotarycraft_item_machine:74>], 

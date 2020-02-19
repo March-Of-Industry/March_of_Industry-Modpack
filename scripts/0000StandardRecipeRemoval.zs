@@ -97,6 +97,9 @@ recipes.remove(<Magneticraft:item.dustBrass>);
 //Minecraft
 recipes.remove(<minecraft:planks>);
 recipes.remove(<minecraft:golden_rail>*64);
+recipes.remove(<minecraft:chest>);
+recipes.remove(<ore:logWood>);
+
 
 //Pyrotheum Crafting
 recipes.removeShapeless(<ore:ingotIron>,[<*>,<ore:dustPyrotheum>]);
