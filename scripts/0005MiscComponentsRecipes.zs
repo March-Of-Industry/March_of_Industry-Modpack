@@ -33,7 +33,7 @@ recipes.addShaped(<Railcraft:slab:2>*2,
    [null,<Railcraft:cube:1>]]); 
 
 //Fine Copper Wire
-mods.railcraft.Rolling.addShaped(<tc:copperWireFine>,
+mods.railcraft.Rolling.addShaped(<Magneticraft:item.copper_coil>,
   [[<tfctech:item.Copper Wire>,<tfctech:item.Copper Wire>,null],
    [null,<customitems:empty_spool>,null],
    [null,null,null]]);
@@ -44,7 +44,7 @@ recipes.remove(<ProjRed|Core:projectred.core.part:15>);
 recipes.remove(<ProjRed|Core:projectred.core.part:15>);
 recipes.addShaped(<ProjRed|Core:projectred.core.part:15> * 2,
   [[null, <ore:plateSteel>, null], 
-   [<tfctech:item.Red Alloy Wire>, <tc:copperWireFine>, <ore:stickSteel>], 
+   [<tfctech:item.Red Alloy Wire>, <Magneticraft:item.copper_coil>, <ore:stickSteel>], 
    [null, <ore:materialRubber>, null]]);
 recipes.addShaped(<ProjRed|Core:projectred.core.part:15>, 
   [[null, <ore:plateWroughtIron>, null],

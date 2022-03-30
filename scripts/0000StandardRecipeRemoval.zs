@@ -93,6 +93,7 @@ for i, item in metalBlocks{
 
 //Magneticraft
 recipes.remove(<Magneticraft:item.dustBrass>);
+recipes.remove(<Magneticraft:item.copper_coil>);
 
 //Minecraft
 recipes.remove(<minecraft:planks>);

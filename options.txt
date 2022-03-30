@@ -15,7 +15,7 @@ difficulty:0
 fancyGraphics:true
 ao:2
 clouds:false
-resourcePacks:["RotaryCraft-Unity-Final.zip","train_prop_rep","what_is_this.zip","Custom_Merged - V1.1.4.zip"]
+resourcePacks:["RotaryCraft-Unity-Final.zip","what_is_this.zip","Custom_Merged - V1.1.4.zip","IR Machine Textures.zip"]
 lastServer:
 lang:en_US
 chatVisibility:0

@@ -103,7 +103,7 @@ mods.TNCtweaks.IEFuels.removeFuel(<liquid:fuel>);
 //1363968-Biodiesel
 //2048000-diesel
 //819200-fuel
-mods.TNCtweaks.IEFuels.addFuel(<liquid:diesel>,400); 
+//mods.TNCtweaks.IEFuels.addFuel(<liquid:diesel>,400); 
 mods.TNCtweaks.IEFuels.addFuel(<liquid:biodiesel>,300); 
 mods.TNCtweaks.IEFuels.addFuel(<liquid:fuel>,200);   
 

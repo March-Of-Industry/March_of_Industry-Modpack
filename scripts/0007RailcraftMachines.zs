@@ -178,6 +178,12 @@ mods.railcraft.Rolling.addShaped(<tfctech:item.Ceramic Plate>,
    [null,null,null]]);
 
 //Unshaped Press Mold
+mods.railcraft.Rolling.addShaped(<customitems:unfired_brick>*6,
+  [[<ore:lumpClay>,null,<ore:lumpClay>],
+   [null,<ore:lumpClay>,null],
+   [<ore:lumpClay>,null,<ore:lumpClay>]]);
+
+//Unshaped Press Mold
 mods.railcraft.Rolling.addShaped(<customitems:metal_press_mold_(unshaped)>,
   [[null,null,null],
    [null,<terrafirmacraft:item.Black Steel Double Sheet>,null],
@@ -223,17 +229,6 @@ mods.railcraft.Rolling.addShaped(<minecraft:iron_door>,
    [null,<ore:plateIron>,null],
    [null,null,null]]);
    
-//TC Steel Rails   
-mods.railcraft.Rolling.addShaped(<tc:steelRail>*18,
-  [[<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>],
-   [null,null,null],
-   [<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>]]);
-   
-//TC Copper Rails
-mods.railcraft.Rolling.addShaped(<tc:copperRail>*12,
-  [[<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>],
-   [null,null,null],
-   [<ore:ingotCopper>,<ore:ingotCopper>,<ore:ingotCopper>]]);
 
 // Advanced Rails
 mods.railcraft.Rolling.addShaped(<Railcraft:part.rail:1> * 8, 
@@ -283,4 +278,3 @@ for i, item in detectors2{
    [ore[i], <minecraft:stone_pressure_plate>, ore[i]], 
    [ore[i], ore[i], ore[i]]]); 
 }     
-

@@ -24,6 +24,22 @@
       },
       {
         "type": "before",
+        "target": "BuildCraft|Builders"
+      },
+      {
+        "type": "before",
+        "target": "BuildCraft|Robotics"
+      },
+      {
+        "type": "before",
+        "target": "BuildCraft|Silicon"
+      },
+      {
+        "type": "before",
+        "target": "BuildCraft|Energy"
+      },
+      {
+        "type": "before",
         "target": "BuildCraft|Transport"
       },
       {
@@ -32,27 +48,7 @@
       },
       {
         "type": "before",
-        "target": "BuildCraft|Silicon"
-      },
-      {
-        "type": "before",
-        "target": "BuildCraft|Robotics"
-      },
-      {
-        "type": "before",
-        "target": "BuildCraft|Energy"
-      },
-      {
-        "type": "before",
-        "target": "BuildCraft|Builders"
-      },
-      {
-        "type": "before",
         "target": "Forestry"
-      },
-      {
-        "type": "before",
-        "target": "Baubles"
       },
       {
         "type": "before",
@@ -224,6 +220,30 @@
       },
       {
         "type": "before",
+        "target": "BinnieCore"
+      },
+      {
+        "type": "before",
+        "target": "ExtraBees"
+      },
+      {
+        "type": "before",
+        "target": "chisel"
+      },
+      {
+        "type": "before",
+        "target": "CarpentersBlocks"
+      },
+      {
+        "type": "before",
+        "target": "DragonAPI"
+      },
+      {
+        "type": "before",
+        "target": "ArchiSections"
+      },
+      {
+        "type": "before",
         "target": "ArchitectureCraft"
       },
       {
@@ -280,15 +300,7 @@
       },
       {
         "type": "before",
-        "target": "BinnieCore"
-      },
-      {
-        "type": "before",
         "target": "Botany"
-      },
-      {
-        "type": "before",
-        "target": "ExtraBees"
       },
       {
         "type": "before",
@@ -297,14 +309,6 @@
       {
         "type": "before",
         "target": "Genetics"
-      },
-      {
-        "type": "before",
-        "target": "chisel"
-      },
-      {
-        "type": "before",
-        "target": "CarpentersBlocks"
       },
       {
         "type": "before",
@@ -328,11 +332,11 @@
       },
       {
         "type": "before",
-        "target": "MineTweaker3"
+        "target": "cosmeticarmorreworked"
       },
       {
         "type": "before",
-        "target": "creativecore"
+        "target": "MineTweaker3"
       },
       {
         "type": "before",
@@ -349,10 +353,6 @@
       {
         "type": "before",
         "target": "Ding"
-      },
-      {
-        "type": "before",
-        "target": "DragonAPI"
       },
       {
         "type": "before",
@@ -448,6 +448,18 @@
       },
       {
         "type": "before",
+        "target": "trackapi"
+      },
+      {
+        "type": "before",
+        "target": "universalmodcore"
+      },
+      {
+        "type": "before",
+        "target": "immersiverailroading"
+      },
+      {
+        "type": "before",
         "target": "inpure|core"
       },
       {
@@ -464,10 +476,6 @@
       },
       {
         "type": "before",
-        "target": "littletiles"
-      },
-      {
-        "type": "before",
         "target": "login_shield"
       },
       {
@@ -477,6 +485,10 @@
       {
         "type": "before",
         "target": "Magneticraft"
+      },
+      {
+        "type": "before",
+        "target": "mpbs"
       },
       {
         "type": "before",
@@ -505,6 +517,10 @@
       {
         "type": "before",
         "target": "modtweaker2"
+      },
+      {
+        "type": "before",
+        "target": "moreplayermodels"
       },
       {
         "type": "before",
@@ -552,6 +568,10 @@
       },
       {
         "type": "before",
+        "target": "oauth"
+      },
+      {
+        "type": "before",
         "target": "OpenMods"
       },
       {
@@ -596,6 +616,10 @@
       },
       {
         "type": "before",
+        "target": "plonk"
+      },
+      {
+        "type": "before",
         "target": "ProjRed|Compatibility"
       },
       {
@@ -609,10 +633,6 @@
       {
         "type": "before",
         "target": "ReactorCraft"
-      },
-      {
-        "type": "before",
-        "target": "reauth"
       },
       {
         "type": "before",
@@ -636,11 +656,23 @@
       },
       {
         "type": "before",
+        "target": "signpic"
+      },
+      {
+        "type": "before",
         "target": "sprinkles_for_vanilla"
       },
       {
         "type": "before",
         "target": "bq_standard"
+      },
+      {
+        "type": "before",
+        "target": "StevesFactoryManager"
+      },
+      {
+        "type": "before",
+        "target": "StevesAddons"
       },
       {
         "type": "before",
@@ -672,10 +704,6 @@
       },
       {
         "type": "before",
-        "target": "tc"
-      },
-      {
-        "type": "before",
         "target": "Translocator"
       },
       {
@@ -689,6 +717,10 @@
       {
         "type": "before",
         "target": "ae2wct"
+      },
+      {
+        "type": "before",
+        "target": "zettaindustries"
       },
       {
         "type": "before",

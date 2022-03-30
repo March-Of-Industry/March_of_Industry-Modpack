@@ -124,7 +124,7 @@ mods.forestry.Carpenter.addRecipe(<ImmersiveEngineering:metalDecoration:5> * 4,
    [<ore:craftingPiston>, <ore:gearBlueSteel>, <ore:craftingPiston>], 
    [<terrafirmacraft:item.Steel Sheet>, heavyMechanicalComponent, <terrafirmacraft:item.Steel Sheet>]], 
    <liquid:creosote> * 1000,20,null);
-   
+
 //Light Engineering Component
 recipes.remove(<ImmersiveEngineering:material:11>);
 mods.forestry.Carpenter.addRecipe(lightMechanicalComponent*2, 

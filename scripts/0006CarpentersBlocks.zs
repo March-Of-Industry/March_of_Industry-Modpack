@@ -44,7 +44,7 @@ recipes.addShaped(<CarpentersBlocks:itemCarpentersChisel>,
 //Carpenters Safe
 recipes.addShaped(<CarpentersBlocks:blockCarpentersSafe>, 
   [[<CarpentersBlocks:blockCarpentersBlock>, <terrafirmacraft:item.Wrought Iron Sheet>, <CarpentersBlocks:blockCarpentersBlock>],
-   [<terrafirmacraft:item.Wrought Iron Sheet>, <RotaryCraft:rotarycraft_item_gearunits:5>,<terrafirmacraft:item.Wrought Iron Sheet>], 
+   [<terrafirmacraft:item.Wrought Iron Sheet>, <RotaryCraft:rotarycraft_item_gearcraft:37>,<terrafirmacraft:item.Wrought Iron Sheet>], 
    [<CarpentersBlocks:blockCarpentersBlock>, <terrafirmacraft:item.Wrought Iron Sheet>, <CarpentersBlocks:blockCarpentersBlock>]]);
 
 //torch

@@ -120,6 +120,7 @@ furnace.remove(<ProjRed|Core:projectred.core.part:*>);
 furnace.remove(<chisel:concrete>);
 furnace.remove(<roadstuff:itemBitumen:1>);
 furnace.remove(<ImmersiveEngineering:metal:20>);
+furnace.remove(<minecraft:brick>);
 //Induction Smelter (Takes Input)
 mods.thermalexpansion.Smelter.removeRecipe( <*>,<minecraft:sand>);
 mods.thermalexpansion.Smelter.removeRecipe(<ore:dustPyrotheum>,<*>);
@@ -188,8 +189,6 @@ mods.railcraft.RockCrusher.removeRecipe(<Railcraft:stair:8>);
 
 //Rolling machine
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail>);
-mods.railcraft.Rolling.removeRecipe(<tc:copperRail>);
-mods.railcraft.Rolling.removeRecipe(<tc:steelRail>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rebar>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:1>);
 mods.railcraft.Rolling.removeRecipe(<Railcraft:part.rail:3>);

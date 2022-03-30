@@ -55,8 +55,6 @@ val itemsToRemove =
 <StorageDrawers:halfDrawers2:*>,
 <StorageDrawers:halfDrawers4:*>,
 <StorageDrawers:trim:*>,
-<tc:trainWorkbench>,
-<tc:distilIdle>,
 <roadstuff:itemIronPart>,
 <roadstuff:itemIronPart:1>,
 <MekanismGenerators:SolarPanel>,
@@ -76,14 +74,15 @@ val itemsToRemove =
 <tfctech:item.buildcraftPipe.pipepowerbronze>,
 <tfctech:item.buildcraftPipe.pipepowersilver>,
 <tfctech:item.buildcraftPipe.pipepowerredsteel>,
-<tfctech:item.buildcraftPipe.pipepowersterlingsilver>]as IItemStack[];
+<tfctech:item.buildcraftPipe.pipepowersterlingsilver>,
+<Magneticraft:pumpjack_1>]as IItemStack[];
 for i, item in itemsToRemove{
     recipes.remove(itemsToRemove[i]);
 }
 
 //,<rftools:unknownDimlet>,<rftools:knownDimlet:*>
 val itemsToHide = 
-[<tc:steel>,
+[
 <MekanismGenerators:Generator:7>,
 <MekanismGenerators:Generator:8>,
 <MekanismGenerators:Generator:9>,
@@ -149,21 +148,6 @@ val itemsToHide =
 <StorageDrawers:halfDrawers2:*>,
 <StorageDrawers:halfDrawers4:*>,
 <StorageDrawers:trim:*>,
-<tc:trainWorkbench>,
-<tc:oreTC>,
-<tc:oreTC:1>,
-<tc:oreTC:2>,
-<tc:waterWheel>,
-<tc:windMill>,
-<tc:generatorDiesel>,
-<tc:openFurnaceIdle>,
-<tc:distilIdle>,
-<tc:distilActive>,
-<tc:openFurnaceActive>,
-<tc:ingotCopper>,
-<tc:coaldust>,
-<tc:steeldust>,
-<tc:graphite>,
 <roadstuff:itemIronPart>,
 <roadstuff:itemIronPart:1>,
 <astikoor:plowcart>,
@@ -184,7 +168,8 @@ val itemsToHide =
 <tfctech:item.buildcraftPipe.pipepowerbronze>,
 <tfctech:item.buildcraftPipe.pipepowersilver>,
 <tfctech:item.buildcraftPipe.pipepowerredsteel>,
-<tfctech:item.buildcraftPipe.pipepowersterlingsilver>] as IItemStack[];
+<tfctech:item.buildcraftPipe.pipepowersterlingsilver>,
+<Magneticraft:pumpjack_1>] as IItemStack[];
 for i, item in itemsToHide{
     NEI.hide(itemsToHide[i]);
 }

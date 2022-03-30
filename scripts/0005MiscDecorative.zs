@@ -55,47 +55,48 @@ recipes.addShaped(<ForgeMicroblock:sawIron>,
 recipes.addShaped(<ForgeMicroblock:sawDiamond>, 
   [[<ore:stickWood>, <RotaryCraft:rotarycraft_item_borecraft:13>, <RotaryCraft:rotarycraft_item_borecraft:13>], 
    [<ore:stickWood>, <terrafirmacraft:item.Blue Steel Saw Blade>, <RotaryCraft:rotarycraft_item_borecraft:13>]]);
-
+/*
 //Little Tiles
-  //Color Tube
+  // Color Tube
   recipes.remove(<littletiles:colorTube>);
 recipes.addShaped(<littletiles:colorTube>, 
   [[null, <ore:itemRubber>, null], 
    [<ore:itemRubber>, <ore:dyeBlack>, <ore:itemRubber>]]);
-  //Rubber Mallet
+  // Rubber Mallet
   recipes.remove(<littletiles:rubberMallet>);
 recipes.addShaped(<littletiles:rubberMallet>,
   [[<tfctech:item.Rubber>, <ore:itemRubber>, <tfctech:item.Rubber>], 
    [<ore:itemRubber>, <ore:stickWood>, <ore:itemRubber>], 
    [null, <ore:stickWood>, null]]);
-  //Recipe
+  // Recipe
 recipes.addShaped(<littletiles:recipe>,
   [[<ore:materialPaper>, <minecraft:feather>], 
    [<ore:dyeBlack>, null]]);
-  //Container
+  // Container
   recipes.remove(<littletiles:container>);
 recipes.addShaped(<littletiles:container>, 
   [[null, <ore:plateIron>, null],
    [<ore:plateIron>, <littletiles:hammer>, <ore:plateIron>], 
    [null, <ore:plateIron>, null]]);
-  //Wrench
+  // Wrench
   recipes.remove(<littletiles:wrench>);
 recipes.addShaped(<littletiles:wrench>, 
   [[null,<ore:ingotIron>], 
    [null,<ore:stickWood>], 
    [null,<ore:dustLapis>]]);
-  //Saw
+  // Saw
   recipes.remove(<littletiles:saw>);
 recipes.addShaped(<littletiles:saw>,
   [[null, <ore:ingotIron>],
    [null, <ore:ingotIron>], 
    [<ore:dustLapis>, <ore:stickWood>]]);
-  //Hammer 
+  // Hammer 
   recipes.remove(<littletiles:hammer>);
 recipes.addShaped(<littletiles:hammer>,
  [[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>], 
   [<ore:dustLapis>, <ore:stickWood>, null], 
-  [<ore:dustLapis>, <ore:stickWood>, null]]);
+  [<ore:dustLapis>, <ore:stickWood>, null]]); 
+*/
 
 //Minecraft
   //Brick Block

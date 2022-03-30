@@ -139,112 +139,58 @@
             "textureName": "cyclohexanone_oxime",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
-        },
+        },   
         {
-            "name": "Train Bogie(Single Axle)",
-            "textureName": "single_bogie",
-            "maxStackSize": 16,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Train Bogie(Double Axle)",
-            "textureName": "double_bogie",
-            "maxStackSize": 8,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Train Bogie(Triple Axle)",
-            "textureName": "triple_bogie",
-            "maxStackSize": 4,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Steam Piston",
-            "textureName": "steam_piston",
-            "maxStackSize": 16,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Train Coupler",
-            "textureName": "train_coupler",
-            "maxStackSize": 32,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Coupling Arm",
-            "textureName": "coupling_arm",
-            "maxStackSize": 16,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Train Brakes",
-            "textureName": "train_brakes",
-            "maxStackSize": 32,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Steel Wheel",
-            "textureName": "steel_wheel",
-            "maxStackSize": 32,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Iron Wheel",
-            "textureName": "iron_wheel",
-            "maxStackSize": 32,
-            "creativeTab": "Nex Corp Solutions"
-        },
-        {
-            "name": "Copper Coin",
-            "textureName": "copper_coin",
+            "name": "Copper Frog",
+            "textureName": "copper_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Silver Coin",
-            "textureName": "silver_coin",
+            "name": "Silver Frog",
+            "textureName": "silver_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Gold Coin",
-            "textureName": "gold_coin",
+            "name": "Gold Frog",
+            "textureName": "gold_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Platinum Coin",
-            "textureName": "Platinum_coin",
+            "name": "Platinum Frog",
+            "textureName": "platinum_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Black Steel Coin",
-            "textureName": "black_steel_coin",
+            "name": "Black Steel Frog",
+            "textureName": "black_steel_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Stainless Steel Coin",
-            "textureName": "stainless_steel_coin",
+            "name": "Stainless Steel Frog",
+            "textureName": "stainless_steel_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Titanium Coin",
-            "textureName": "titanium_coin",
+            "name": "Titanium Frog",
+            "textureName": "titanium_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Tungsten Coin",
-            "textureName": "tungsten_coin",
+            "name": "Tungsten Frog",
+            "textureName": "tungsten_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         },
         {
-            "name": "Bedrock Coin",
-            "textureName": "bedrock_coin",
+            "name": "Bedrock Frog",
+            "textureName": "bedrock_frog",
             "maxStackSize": 64,
             "creativeTab": "Nex Corp Solutions"
         }
@@ -264,7 +210,15 @@
         "material": "rock",
         "hardness": 1,
         "creativeTab": "Nex Corp Solutions"
+      },
+      { 
+        "name": "Missing Tiles",
+        "textureName": "missing_tiles",
+        "material": "rock",
+        "hardness": 1,
+        "creativeTab": "Nex Corp Solutions"
       }
+      
     ],
     "axes": [
         
@@ -473,7 +427,18 @@
             "textureName": "acetone",
             "temperature": 300,
             "creativeTab": "Nex Corp Solutions",
-            "density": 784,
+            "density": 1000,
+            "viscosity": 350,            
+            "lightLevel": 1.0,
+            "isGas": false,
+            "flowLength": 5
+        },
+        {
+            "name":"Cyclohexanone",
+            "textureName": "cyclohexanone",
+            "temperature": 300,
+            "creativeTab": "Nex Corp Solutions",
+            "density": 1000,
             "viscosity": 350,            
             "lightLevel": 1.0,
             "isGas": false,

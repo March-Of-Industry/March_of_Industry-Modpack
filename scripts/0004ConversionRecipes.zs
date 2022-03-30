@@ -19,8 +19,7 @@ recipes.addShapeless(<terrafirmacraft:item.Clay>, [<minecraft:clay_ball>]);
 //Casein Glue-> Slime Ball
 recipes.addShapeless(<minecraft:slime_ball>, [<tfcm:item.CaseinGlue>,<tfcm:item.CaseinGlue>]);
 
-//Log->Sticks
-recipes.addShapeless(<terrafirmacraft:item.stick> * 4, [<ore:logWood>, <ore:itemHammer>.transformDamage(1)]);
+
 
 //Rockwool->Minecraft Wool
 recipes.addShapeless(<minecraft:wool>.withTag({display: {Name: "Artifical Wool", Lore: ["Made Using Artificial Means", "May be a bit scratchy","Flammable"]}}),[<ore:blockClothRock>]);

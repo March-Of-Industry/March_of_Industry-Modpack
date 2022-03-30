@@ -17,6 +17,7 @@ val metals =
 "Red Steel",
 "Blue Steel"
 ] as string[];
+
 val tools =
 [
 "Pick",
@@ -54,6 +55,8 @@ val metalTemps =
 ] as int[];
 //recipes.addShapeless(mods.MTUtils.Utils.getItemStackFromString("terrafirmacraft:item."+metals[0] + " Ingot"),[<minecraft:stone>,<ore:stickWood>]);
 
+ 
+ 
 for i, metal in metals 
 {
 	for j, tool in tools{
@@ -64,6 +67,7 @@ for i, metal in metals
 	for j, armor in armors{
 		var output = mods.MTUtils.Utils.getItemStackFromString("terrafirmacraft:item."+metal + " Unfinished " +armor);
 		var input = mods.MTUtils.Utils.getItemStackFromString("terrafirmacraft:item."+metal + " " +armor);
+    var repair = mods.MTUtils.Utils.getItemStackFromString("terrafirmacraft:item."+metal + " Sheet");
 		mods.Terrafirmacraft.ItemHeat.addRecipe(output,input, metalTemps[i], meltRate);
 	}
 }
